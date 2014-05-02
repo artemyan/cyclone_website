@@ -1,0 +1,21 @@
+html
+  head
+    title Cyclone
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  body
+    .container
+      header
+        .logo.col.col-header-logo = image_tag nil
+        .menu.col.col-header-menu = render_navigation
+        .contacts.col.col-header-contacts
+          .phone
+            .small = '(812)'
+            .big 648-02-50
+            .link = link_to 'все контакты', '#'
+
+        .banner = yield :banner
+
+      .content
+        = yield :content

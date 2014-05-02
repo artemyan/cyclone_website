@@ -1,0 +1,10 @@
+.link{
+  display: inline-block;
+  border-bottom: 1px solid;
+  border-color: inherit;
+  &, &:hover, &:visited, &:active{ text-decoration: none; }
+}
+
+a{
+  @include link($color-red);
+}
