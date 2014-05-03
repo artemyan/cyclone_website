@@ -11,9 +11,9 @@ SimpleNavigation::Configuration.run do |navigation|
     # primary.dom_attributes = {id: 'menu-id', class: 'menu-class'}
     # primary.auto_highlight = false
 
-    primary.item :company, 'компания', '#'
-    primary.item :career, 'карьера', '#'
-    primary.item :licences, 'лицензии', '#'
-    primary.item :pressroom, 'пресс-центр', '#'
+    primary.item :company, 'компания', page_path('company')
+    primary.item :career, 'карьера', page_path('career')
+    primary.item :licences, 'лицензии', page_path('licenses')
+    primary.item :pressroom, 'пресс-центр', page_path('press_room')
   end
 end

@@ -1,0 +1,1 @@
+LICENSES = YAML.load_file("#{Rails.root}/config/data/licenses.yml")

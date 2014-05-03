@@ -1,0 +1,19 @@
+.license{
+  $preview-width: 100px;
+
+  @include clearfix();
+  padding-right: 20px;
+
+  .license-preview{
+    width: $preview-width;
+    display: block;
+    float: left;
+    img{
+      max-width: $preview-width;
+      height: auto;
+      border: 2px solid #f0f0f0;
+    }
+  }
+
+  h5, p{ padding-left: $preview-width; }
+}
