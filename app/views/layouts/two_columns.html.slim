@@ -1,5 +1,7 @@
 - content_for :content do
-  .col.col-content-left = yield :sidebar
+  .col.col-content-left
+    = yield :sidebar
+    .sidebar-menu = yield :sidebar_menu
   .col.col-content-right = yield
 
 = render 'layouts/application'

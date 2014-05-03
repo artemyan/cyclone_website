@@ -1,0 +1,25 @@
+.sidebar-menu{
+  @include no-bullets;
+
+  font-family: $font-family-regular;
+  font-size: 13px;
+  text-transform: uppercase;
+
+  li{
+    padding-bottom: 1em;
+    a { @include link($color-gray-l, $color-red); }
+  }
+
+  // активный пункт меню
+  li.selected{
+    // у активного пункта меню выставляем иконку шеврона
+    &:before{
+      @extend .fa !optional;
+      @extend .fa-chevron-right !optional;
+      padding-right: 5px;
+    }
+
+    &, a.selected{ color: $color-red; border-color: transparent; }
+  }
+
+}

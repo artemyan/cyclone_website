@@ -1,5 +1,8 @@
 @import "compass/css3/inline-block";
 @import "compass/typography/lists/inline-block-list";
+@import "compass/typography/lists/bullets";
+
+@import "font-awesome";
 
 @import "app/partials/fonts";
 @import "app/partials/variables";
@@ -14,6 +17,7 @@
 @import "app/partials/header";
 @import "app/partials/straps";
 @import "app/partials/licenses";
+@import "app/partials/sidebar_menu";
 @import "app/partials/others";
 
 
