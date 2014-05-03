@@ -15,5 +15,6 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :career, 'карьера', page_path('career')
     primary.item :licences, 'лицензии', page_path('licenses')
     primary.item :pressroom, 'пресс-центр', page_path('press_room')
+    primary.item :contacts, 'контакты', page_path('contacts')
   end
 end
