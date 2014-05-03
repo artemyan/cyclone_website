@@ -7,6 +7,10 @@ header, .header{
     font-family: $font-family-bold;
 
     .selected{ color: $color-gray-d; border-color: transparent; }
+
+    // Скрываем последний пункт меню.
+    // Известно, что это «контакты» и по дизайну этот пункт должен быть скрыт
+    #contacts{ display: none; }
   }
 
   .logo{

@@ -1,0 +1,11 @@
+header
+  .logo.col.col-header-logo
+    = link_to root_url do
+      = image_tag 'logo.png', alt: 'Циклон'
+
+  .menu.col.col-header-menu = render_navigation
+  .contacts.col.col-header-contacts
+    .phone
+      .small = '(812)'
+      .big 648-02-50
+      .link = link_to 'все контакты', page_path('contacts')
