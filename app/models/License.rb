@@ -4,10 +4,10 @@ class License
 
   def initialize(license)
     @licenses = license
-    @title = license['title'].html_safe
-    @description = license['description'].html_safe
-    @pdf_url = generate_file_url(license['file_name'])
-    @preview_url = generate_preview_url(license['preview_name'])
+    @title = license[:title].html_safe
+    @description = license[:description].html_safe
+    @pdf_url = generate_file_url(license[:file_name])
+    @preview_url = generate_preview_url(license[:preview_name])
   end
 
 

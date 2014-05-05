@@ -1,0 +1,7 @@
+- content_for :sidebar_menu do
+  = render_navigation
+
+  h2 Объекты и сооружения
+  - facilities.each do |facility|
+    .col
+      p = link_to facility[:uniq_name], page_path("facilities/#{facility[:uniq_name]}")

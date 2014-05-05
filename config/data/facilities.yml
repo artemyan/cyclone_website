@@ -1,0 +1,12 @@
+facilities:
+  - uniq_name: uniq_object_1
+    city: Санкт-Петербург
+    category: Категория 1
+
+  - uniq_name: uniq_object_2
+    city: Москва
+    category: Категория 1
+
+  - uniq_name: uniq_object_3
+    city: Санкт-Петербург
+    category: Категория 2
