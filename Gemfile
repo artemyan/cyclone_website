@@ -24,3 +24,5 @@ gem 'compass-rails'
 gem 'raphael-rails'
 gem 'thin'
 gem 'font-awesome-rails'
+
+gem 'capistrano', '~> 2.15.5'
