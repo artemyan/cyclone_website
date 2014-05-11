@@ -2,13 +2,14 @@
   margin-left: -$gutter;
 }
 
+$anim_sec: 0.1s;
 .invisible{
   opacity: 0.01;
 
-  -webkit-transition: opacity .3s ease-in-out;
-  -moz-transition: opacity .3s ease-in-out;
-  -o-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity $anim_sec ease-in-out;
+  -moz-transition: opacity $anim_sec ease-in-out;
+  -o-transition: opacity $anim_sec ease-in-out;
+  transition: opacity $anim_sec ease-in-out;
 
   z-index: -1;
 }
@@ -16,10 +17,10 @@
 .visible{
   opacity: 0.99;
 
-  -webkit-transition: opacity .3s ease-in-out;
-  -moz-transition: opacity .3s ease-in-out;
-  -o-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity $anim_sec ease-in-out;
+  -moz-transition: opacity $anim_sec ease-in-out;
+  -o-transition: opacity $anim_sec ease-in-out;
+  transition: opacity $anim_sec ease-in-out;
 
   z-index: 2;
 }

@@ -20,4 +20,8 @@ class City
     CITIES.map{|obj| City.new(HashTransform.keys_to_symbols(obj)) }
   end
 
+  def self.find(id)
+    all.select{|c| c.id==id}.first
+  end
+
 end
