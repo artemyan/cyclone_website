@@ -150,11 +150,11 @@ window.onload = function () {
     var right_bottom_txt = paper.text(780, 500, "ОБЪЕКТЫ\nМЕДИЦИНЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
     var center_txt = paper.text(600, 320, "КАРТА\nОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'middle' });
 
-    var left_top_path = paper.path(left_top_coords).attr(path_attrs).attr({href: '//google.com'});
-    var left_bottom_path = paper.path(left_bottom_coords).attr(path_attrs).attr({href: '//google.com'});
-    var right_top_path = paper.path(right_top_coords).attr(path_attrs).attr({href: '//google.com'});
-    var right_bottom_path = paper.path(right_bottom_coords).attr(path_attrs).attr({href: '//google.com'});
-    var center_path = paper.path(center_coords).attr(path_attrs).attr({href: '//google.com'});
+    var left_top_path = paper.path(left_top_coords).attr(path_attrs).attr({href: '/facilities'});
+    var left_bottom_path = paper.path(left_bottom_coords).attr(path_attrs).attr({href: '/facilities'});
+    var right_top_path = paper.path(right_top_coords).attr(path_attrs).attr({href: '/facilities'});
+    var right_bottom_path = paper.path(right_bottom_coords).attr(path_attrs).attr({href: '/facilities'});
+    var center_path = paper.path(center_coords).attr(path_attrs).attr({href: '/facilities'});
 
 
 
@@ -212,6 +212,12 @@ window.onload = function () {
         function(){path_hover(null, center_txt)},
         function(){path_unhover(null, center_txt)}
     );
+
+    left_top_path.click(function(){ window.location = this.attrs.href; });
+    left_bottom_path.click(function(){ window.location = this.attrs.href; });
+    right_top_path.click(function(){ window.location = this.attrs.href; });
+    right_bottom_path.click(function(){ window.location = this.attrs.href; });
+    center_path.click(function(){ window.location = this.attrs.href; });
 
     paper.safari();
 };
