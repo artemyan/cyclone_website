@@ -1,7 +1,17 @@
 - content_for :sidebar_menu do
   = render_navigation
 
-  h2 Объекты и сооружения
-  - facilities.each do |facility|
-    .col
-      p = link_to facility[:uniq_name], page_path("facilities/#{facility[:uniq_name]}")
+
+- facilities_by_city.each do |city, facilities|
+  .country-map-popup.js-popup
+    = link_to '#', class: 'close js-popup-close' do
+      span.fa.fa-times-circle
+
+    h5 = city
+    - facilities.each do |facility|
+      p = link_to facility.title, page_path(facility.path)
+
+
+.country-map
+  = link_to '', '#', class: 'country-map-pointer'
+  = image_tag 'russian_map.png'

@@ -1,0 +1,59 @@
+$el: '.country-map';
+
+#{$el}{
+  position: relative;
+  #{$el}-pointer{
+    background-image: image-url('map-pointer.png');
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 32px;
+    left: 0;
+    top: 0;
+    &, &:hover, &:visited, &:active { text-decoration: none; border: none; }
+  }
+}
+
+#{$el}-popup{
+  background-color: #26c784;
+  padding: 12px 12px 32px;
+  border-radius: 8px;
+  width: 238px;
+  margin-bottom: 30px;
+  position: relative;
+
+  h5 {
+    &, a, a:hover, a:active, a:visited {
+      font-family: $font-family-medium;
+      font-size: 18px;
+      line-height: 1.1;
+      color: #000;
+      display: block;
+      padding-bottom: .7em;
+    }
+  }
+
+  a {
+    @include link(#fff, #fff);
+    display: inline;
+    font-family: $font-family-regular;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  p{
+    padding-bottom: .7em;
+  }
+
+  &:after{
+    @include arrow-bottom(#26c784);
+  }
+
+  .close{
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
