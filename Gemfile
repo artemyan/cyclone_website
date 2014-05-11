@@ -27,7 +27,5 @@ gem 'compass-rails'
 gem 'raphael-rails'
 gem 'thin'
 gem 'font-awesome-rails'
-
 gem 'capistrano', '~> 2.15.5'
-
 gem 'rake', '~> 10.2.2'

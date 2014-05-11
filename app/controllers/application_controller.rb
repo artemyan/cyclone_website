@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
                 :facilities,
                 :facilities_by_city,
                 :facilities_by_category,
+                :cities
 
 
   private
@@ -27,4 +28,9 @@ class ApplicationController < ActionController::Base
   def facilities_by_category
     @_facilities_by_category ||= Facility.group_by_category
   end
+
+  def cities
+    @_cities ||= City.all
+  end
+
 end

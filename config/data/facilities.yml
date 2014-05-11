@@ -1,15 +1,15 @@
 facilities:
   - uniq_name: uniq_object_1
-    city: Санкт-Петербург
+    city: spb
     category: Категория 1
     title: Объект 1 с длинным названием, оочень длинным
 
   - uniq_name: uniq_object_2
-    city: Москва
+    city: moscow
     category: Категория 1
     title: Объект 2
 
   - uniq_name: uniq_object_3
-    city: Санкт-Петербург
+    city: spb
     category: Категория 2
     title: Объект 3

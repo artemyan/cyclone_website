@@ -1,0 +1,10 @@
+cities:
+  - id: spb
+    title: Санкт-Петербург
+    x: 75
+    y: 181
+
+  - id: moscow
+    title: Москва
+    x: 120
+    y: 238
