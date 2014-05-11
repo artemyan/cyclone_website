@@ -30,5 +30,5 @@ $ ->
 
   # обрабатываем клики по кнопке «закрыть» в popup
   $(document).on('click', '.js-popup-close', (e) ->
-    $(e.target).closest('.js-popup').fadeOut(100)
+    $(e.target).closest('.js-popup').removeClass('visible').addClass('invisible')
   )

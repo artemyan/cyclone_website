@@ -4,7 +4,7 @@
 
 $anim_sec: 0.1s;
 .invisible{
-  opacity: 0.01;
+  opacity: 0;
 
   -webkit-transition: opacity $anim_sec ease-in-out;
   -moz-transition: opacity $anim_sec ease-in-out;

@@ -1,16 +1,17 @@
 class Facility
-  attr_reader :title, :path, :city_id, :category
+  attr_reader :id, :title, :path, :city_id, :category_id
 
   def initialize(obj)
     @facility = obj
+    @id = obj[:id]
     @title = obj[:title]
     @city_id = obj[:city_id]
-    @category = obj[:category]
-    @path = generate_path(obj[:uniq_name])
+    @category_id = obj[:category_id]
+    @path = generate_path
   end
 
-  def generate_path(title)
-    "facilities/#{title}" if title
+  def generate_path
+    "facilities/#{@category_id}/#{@id}" if @id && @category_id
   end
 
 
@@ -24,7 +25,11 @@ class Facility
   end
 
   def self.group_by_category
-    self.all.group_by{ |x| x.category }
+    self.all.group_by{ |x| x.category_id }
+  end
+
+  def self.find(id)
+    all.select{|c| c.id==id}.first
   end
 
 end
