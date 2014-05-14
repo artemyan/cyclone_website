@@ -3,6 +3,7 @@
 
 
 
+
 .country-map
   - cities.each do |city|
     = link_to '', '#', class: 'country-map-pointer js-map-pointer', style: "left: #{city.map_x}px; top: #{city.map_y}px", data: { target: city.id }

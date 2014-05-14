@@ -9,7 +9,12 @@ html
     .container
 
       = render 'layouts/header'
-      .strap = yield :banner
+
+
+      - if yield(:banner).blank?
+        = section_strap
+      - else
+        .strap = yield(:banner)
 
       .content
         = yield :content
