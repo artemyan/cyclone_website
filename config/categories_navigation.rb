@@ -13,8 +13,8 @@ SimpleNavigation::Configuration.run do |navigation|
 
       primary.item category.id, category.title, page_path(category.path) do |submenu|
         # отрисовываем в меню и объекты по категориям, иначе не работает подсветка категории при открытии объекта
-        # ссылка на категорию /facilities/cat1
-        # ссылка на объект /facilities/cat1/facility_id
+        # ссылка на категорию /facilities/engineering_systems
+        # ссылка на объект /facilities/engineering_systems/facility_id
         Facility.group_by_category.each do |cat_id, facilities|
           if cat_id==category.id
             facilities.each do |facility|

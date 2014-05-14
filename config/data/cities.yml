@@ -8,3 +8,15 @@ cities:
     title: Москва
     x: 120
     y: 238
+
+  - id: kirov
+    title: Киров
+    x: 220
+    y: 228
+
+  - id: sestroreck
+    title: Сестрорецк
+    x: 212
+    y: 218
+
+

@@ -2,7 +2,7 @@ module FacilitiesHelper
 
 
   def facility_title
-    # params[:id] = 'facilities/cat1/uniq_object_1'
+    # params[:id] = 'facilities/engineering_systems/uniq_object_1'
     # return id = uniq_object_1
     id = params[:id].split('/').last
 

@@ -1,12 +1,12 @@
 categories:
-  - id: cat1
+  - id: engineering_systems
     title: Инженерные системы
 
-  - id: cat2
+  - id: ekspluatacia_to_objectov
     title: Эксплуатация и ТО объектов
 
-  - id: cat3
+  - id: programmno_tehnicheskie_kompleksi
     title: Программно-технические комплексы
 
-  - id: cat4
+  - id: objecti_mediciny
     title: Объекты медицины
