@@ -1,26 +1,31 @@
 licenses:
-  - title: ЗАО «ЦТО ККМ»
-    description: Центр технического обслуживания контрольно-кассовых машин. Одна из крупнейших компаний на рынке
-    preview_name: zao_cto_kkm.png
-    file_name: zao_cto_kkm.pdf
+  - title: Лицензия №2-2/00469 от 24 февраля 2010г
+    description: Производства работа по монтажу, ремонту и обслуживанию средств обеспечения пожарной безопасности зданий и сооружений
+    preview_name: licensia_na_montag.jpg
+    file_name: licensia_na_montag.jpg
 
-  - title: ЗАО «ЦТО ККМ»
-    description: Центр технического обслуживания контрольно-кассовых машин. Одна из крупнейших компаний на рынке
-    preview_name: zao_cto_kkm.png
-    file_name: zao_cto_kkm.pdf
+  - title: Лицензия №7169 от 08 июля 2013г
+    description: На осуществление работ с использованием сведений, состовляющих государственную тайну
+    preview_name: licensia_na_taniny.jpg
+    file_name: licensia_na_taniny.jpg
 
-  - title: ЗАО «ЦТО ККМ»
-    description: Центр технического обслуживания контрольно-кассовых машин. Одна из крупнейших компаний на рынке
-    preview_name: zao_cto_kkm.png
-    file_name: zao_cto_kkm.pdf
+  - title: Лицензия № ФС-99-04-000897-14 от 05 февраля 2014г.
+    description: На осуществление деятельности по производству и техническому обслуживанию (за исключением случая, если техническое обслуживание осуществляется для обеспечения собственных нужд юридического лица или индивидуального предпринимателя) медицинской техники
+    preview_name: licensia_v_zdravoohranenii.jpg
+    file_name: licensia_v_zdravoohranenii.jpg
 
-  - title: ЗАО «ЦТО ККМ»
-    description: Центр технического обслуживания контрольно-кассовых машин. Одна из крупнейших компаний на рынке
-    preview_name: zao_cto_kkm.png
-    file_name: zao_cto_kkm.pdf
+  - title: Сертификат соответствия № СДС.ЕР.СМ.01085-13
+    description: Срок действия с 11 июля 2013г по 30 марта 2015г
+    preview_name: sertificat_sootvetstvia.jpg
+    file_name: sertificat_sootvetstvia.jpg
 
-  - title: ЗАО «ЦТО ККМ»
-    description: Центр технического обслуживания контрольно-кассовых машин. Одна из крупнейших компаний на рынке
-    preview_name: zao_cto_kkm.png
-    file_name: zao_cto_kkm.pdf
+  - title: Свидетельство №0256.01-2013-7802190126-С-151
+    description: О допуске к определенному виду и видам работ, которые оказывают влияние на безопасность объектов капитального строительства
+    preview_name: svidetelstvo_na_bezopasnost.jpg
+    file_name: svidetelstvo_na_bezopasnost.jpg
+
+  - title: Свидетельство № СРО-П-145-04032010
+    description: О допуске к работам по подготовке проектной документации, которые оказывают влияние на безопасность объектов капитального строительства №9718
+    preview_name: svidetelstvo_po_podgotovke_dokymentacii.jpg
+    file_name: svidetelstvo_po_podgotovke_dokymentacii.jpg
 
