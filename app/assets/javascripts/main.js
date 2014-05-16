@@ -136,19 +136,21 @@ window.onload = function () {
         return coords;
     }();
 
-    var bg = paper.image("/assets/home-bg.jpg", 0, 0, 1200, 733);
+//    var bg = paper.image("/assets/home-bg.jpg", 0, 0, 1200, 733);
 
 
 
-//    var left_top_img = paper.image("/assets/home/ekspluatacia_i_to_objectov.png", padding_left, 0, 553, btn_height).attr(img_attrs);
-    var left_bottom_img = paper.image("/assets/home/ekspluatacia_i_to_objectov.png", padding_left, btns_top_offset, 553, btn_height).attr(img_attrs).hide();
-    var right_top_img = paper.image("/assets/home/ekspluatacia_i_to_objectov.png", padding_left*2 + btn_offset + btn_width + 3, 0, 553, btn_height).attr(img_attrs).hide();
+    var left_top_img = paper.image("/assets/home-menu-sprites/engineering.png", padding_left, 0, 553, btn_height).attr(img_attrs);
+    var left_bottom_img = paper.image("/assets/home-menu-sprites/tech_service.png", padding_left, btns_top_offset, 553, btn_height).attr(img_attrs);
+    var right_top_img = paper.image("/assets/home-menu-sprites/soft.png", padding_left*2 + btn_offset + btn_width + 3, 0, 553, btn_height).attr(img_attrs);
+    var right_bottom_img = paper.image("/assets/home-menu-sprites/medicine.png", padding_left*2 + btn_offset + btn_width + 3, btns_top_offset, 553, btn_height).attr(img_attrs);
+    var center_img = paper.image("/assets/home-menu-sprites/map.png", padding_left*2 + btn_offset + btn_width + 3, btns_top_offset, 553, btn_height).attr(img_attrs);
 
-    var left_top_txt = paper.text(180, 150, "ИНЖЕНЕРНЫЕ\nСИСТЕМЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
-    var left_bottom_txt = paper.text(180, 500, "ЭКСПЛУАТАЦИЯ\nИ ТО ОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'start' });
-    var right_top_txt = paper.text(780, 150, "ПРОГРАММНО-\nТЕХНИЧЕСКИЕ\nКОМПЛЕКСЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
-    var right_bottom_txt = paper.text(780, 500, "ОБЪЕКТЫ\nМЕДИЦИНЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
-    var center_txt = paper.text(600, 320, "КАРТА\nОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'middle' });
+//    var left_top_txt = paper.text(180, 150, "ИНЖЕНЕРНЫЕ\nСИСТЕМЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
+//    var left_bottom_txt = paper.text(180, 500, "ЭКСПЛУАТАЦИЯ\nИ ТО ОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'start' });
+//    var right_top_txt = paper.text(780, 150, "ПРОГРАММНО-\nТЕХНИЧЕСКИЕ\nКОМПЛЕКСЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
+//    var right_bottom_txt = paper.text(780, 500, "ОБЪЕКТЫ\nМЕДИЦИНЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
+//    var center_txt = paper.text(600, 320, "КАРТА\nОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'middle' });
 
     var left_top_path = paper.path(left_top_coords).attr(path_attrs).attr({href: '/facilities'});
     var left_bottom_path = paper.path(left_bottom_coords).attr(path_attrs).attr({href: '/facilities'});
@@ -188,30 +190,30 @@ window.onload = function () {
     };
 
 
-    left_top_path.hover(
-        function(){path_hover(null, left_top_txt)},
-        function(){path_unhover(null, left_top_txt)}
-    );
-
-    left_bottom_path.hover(
-        function(){path_hover(left_bottom_img, left_bottom_txt)},
-        function(){path_unhover(left_bottom_img, left_bottom_txt)}
-    );
-
-    right_top_path.hover(
-        function(){path_hover(right_top_img, right_top_txt)},
-        function(){path_unhover(right_top_img, right_top_txt)}
-    );
-
-    right_bottom_path.hover(
-        function(){path_hover(null, right_bottom_txt)},
-        function(){path_unhover(null, right_bottom_txt)}
-    );
-
-    center_path.hover(
-        function(){path_hover(null, center_txt)},
-        function(){path_unhover(null, center_txt)}
-    );
+//    left_top_path.hover(
+//        function(){path_hover(null, left_top_txt)},
+//        function(){path_unhover(null, left_top_txt)}
+//    );
+//
+//    left_bottom_path.hover(
+//        function(){path_hover(left_bottom_img, left_bottom_txt)},
+//        function(){path_unhover(left_bottom_img, left_bottom_txt)}
+//    );
+//
+//    right_top_path.hover(
+//        function(){path_hover(right_top_img, right_top_txt)},
+//        function(){path_unhover(right_top_img, right_top_txt)}
+//    );
+//
+//    right_bottom_path.hover(
+//        function(){path_hover(null, right_bottom_txt)},
+//        function(){path_unhover(null, right_bottom_txt)}
+//    );
+//
+//    center_path.hover(
+//        function(){path_hover(null, center_txt)},
+//        function(){path_unhover(null, center_txt)}
+//    );
 
     left_top_path.click(function(){ window.location = this.attrs.href; });
     left_bottom_path.click(function(){ window.location = this.attrs.href; });
