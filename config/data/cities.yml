@@ -9,10 +9,10 @@ cities:
     x: 120
     y: 238
 
-  - id: kirov
-    title: Киров
-    x: 220
-    y: 228
+  - id: kirishi
+    title: Кириши
+    x: 100
+    y: 191
 
   - id: sestroreck
     title: Сестрорецк

@@ -1,6 +1,6 @@
 facilities:
-  - id: neftepererobativaushii_zavod_v_kirove
-    city_id: kirov
+  - id: neftepererobativaushii_zavod_v_kirishah
+    city_id: kirishi
     category_id: engineering_systems
     title: Нефтеперерабатывающий завод в г. Кириши.
 
