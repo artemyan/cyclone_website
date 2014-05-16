@@ -140,18 +140,18 @@ window.onload = function () {
 
 
 
-    var left_top_img = paper.image("/assets/home-menu-sprites/engineering.png", padding_left, 0, 553, btn_height).attr(img_attrs);
-    var left_bottom_img = paper.image("/assets/home-menu-sprites/tech_service.png", padding_left, btns_top_offset, 553, btn_height).attr(img_attrs);
-    var right_top_img = paper.image("/assets/home-menu-sprites/soft.png", padding_left*2 + btn_offset + btn_width + 3, 0, 553, btn_height).attr(img_attrs);
-    var right_bottom_img = paper.image("/assets/home-menu-sprites/medicine.png", padding_left*2 + btn_offset + btn_width + 3, btns_top_offset, 553, btn_height).attr(img_attrs);
-    var center_img = paper.image("/assets/home-menu-sprites/map.png", padding_left + btn_width + 15, 10 , 372, 638).attr(img_attrs);
+    var left_top_img = paper.image("<%= image_path('home-menu-sprites/engineering.png') %>", padding_left, 0, 553, btn_height).attr(img_attrs);
+    var left_bottom_img = paper.image("<%= image_path('home-menu-sprites/tech_service.png') %>", padding_left, btns_top_offset, 553, btn_height).attr(img_attrs);
+    var right_top_img = paper.image("<%= image_path('home-menu-sprites/soft.png') %>", padding_left*2 + btn_offset + btn_width + 3, 0, 553, btn_height).attr(img_attrs);
+    var right_bottom_img = paper.image("<%= image_path('home-menu-sprites/medicine.png') %>", padding_left*2 + btn_offset + btn_width + 3, btns_top_offset, 553, btn_height).attr(img_attrs);
+    var center_img = paper.image("<%= image_path('home-menu-sprites/map.png') %>", padding_left + btn_width + 15, 10 , 372, 638).attr(img_attrs);
 
 
-    var left_top_img_hover = paper.image("/assets/home-menu-sprites/engineering_hover.png", padding_left, 0, 553, btn_height).attr(img_attrs).hide();
-    var left_bottom_img_hover = paper.image("/assets/home-menu-sprites/tech_service_hover.png", padding_left, btns_top_offset, 553, btn_height).attr(img_attrs).hide();
-    var right_top_img_hover = paper.image("/assets/home-menu-sprites/soft_hover.png", padding_left * 2 + btn_offset + btn_width + 3, 0, 553, btn_height).attr(img_attrs).hide();
-    var right_bottom_img_hover = paper.image("/assets/home-menu-sprites/medicine_hover.png", padding_left * 2 + btn_offset + btn_width + 3, btns_top_offset, 553, btn_height).attr(img_attrs).hide();
-    var center_img_hover = paper.image("/assets/home-menu-sprites/map_hover.png", padding_left + btn_width + 15, 10, 372, 638).attr(img_attrs).hide();
+    var left_top_img_hover = paper.image("<%= image_path('home-menu-sprites/engineering_hover.png') %>", padding_left, 0, 553, btn_height).attr(img_attrs).hide();
+    var left_bottom_img_hover = paper.image("<%= image_path('home-menu-sprites/tech_service_hover.png') %>", padding_left, btns_top_offset, 553, btn_height).attr(img_attrs).hide();
+    var right_top_img_hover = paper.image("<%= image_path('home-menu-sprites/soft_hover.png') %>", padding_left * 2 + btn_offset + btn_width + 3, 0, 553, btn_height).attr(img_attrs).hide();
+    var right_bottom_img_hover = paper.image("<%= image_path('home-menu-sprites/medicine_hover.png') %>", padding_left * 2 + btn_offset + btn_width + 3, btns_top_offset, 553, btn_height).attr(img_attrs).hide();
+    var center_img_hover = paper.image("<%= image_path('home-menu-sprites/map_hover.png') %>", padding_left + btn_width + 15, 10, 372, 638).attr(img_attrs).hide();
 
 //    var left_top_txt = paper.text(180, 150, "ИНЖЕНЕРНЫЕ\nСИСТЕМЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
 //    var left_bottom_txt = paper.text(180, 500, "ЭКСПЛУАТАЦИЯ\nИ ТО ОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'start' });

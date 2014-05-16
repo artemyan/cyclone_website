@@ -29,6 +29,20 @@ set :branch, "master"
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
+namespace(:thin) do
+  task :stop do
+    run %Q{cd #{latest_release} && bundle exec thin stop -C /etc/thin/ziklon.yml}
+   end
+  
+  task :start do
+    run %Q{cd #{latest_release} && bundle exec thin start -C /etc/thin/ziklon.yml}
+  end
+
+  task :restart do
+    run %Q{cd #{latest_release} && bundle exec thin restart -C /etc/thin/ziklon.yml}
+  end
+end
+
 
 
 # after "deploy", "deploy:cleanup"
