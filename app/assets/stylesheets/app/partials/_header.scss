@@ -1,10 +1,15 @@
 header, .header{
-  margin-bottom: 30px;
+  margin: 0 $strap-gutter 30px;
 
   .menu{
     @include inline-block-list;
-    li { @include inline-block-list-item(10px); }
     font-family: $font-family-bold;
+    font-size: $font-size-header-menu;
+
+    margin-top: $offset-header-menu-top;
+
+    li { @include inline-block-list-item(10px); }
+    li a { @include link($color-red); line-height: 1.1; }
 
     .selected{ color: $color-gray-d; border-color: transparent; }
 
@@ -31,6 +36,7 @@ header, .header{
       }
 
       .big{
+        padding-left: .3em;
         color: $color-gray-d;
         font-family: $font-family-medium;
         font-size: 24px;

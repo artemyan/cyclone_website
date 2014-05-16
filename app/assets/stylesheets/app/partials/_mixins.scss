@@ -1,8 +1,8 @@
 @mixin link($color: $color-blue, $hover-color: darken($color, 10%)){
-  display: inline-block;
+  display: inline;
   border-bottom: 1px solid;
 
-  line-height: 1.1;
+  line-height: 1.3;
 
   &, &:visited {
     border-color: $color;

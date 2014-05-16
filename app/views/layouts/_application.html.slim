@@ -6,9 +6,7 @@ html
     = csrf_meta_tags
   body
     .container
-
       = render 'layouts/header'
-
 
       - if yield(:banner).blank?
         = section_strap

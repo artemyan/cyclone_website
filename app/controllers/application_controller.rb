@@ -7,7 +7,8 @@ class ApplicationController < ActionController::Base
                 :facilities,
                 :facilities_by_city,
                 :facilities_by_category,
-                :cities
+                :cities,
+                :current_category
 
 
   private
@@ -31,6 +32,16 @@ class ApplicationController < ActionController::Base
 
   def cities
     @_cities ||= City.all
+  end
+
+
+  # возвращаем категорию, внутри которой находимся
+  # урл страницы может быть таким:
+  #     /facilities/category_id
+  #     /facilities/category_id/facility_id
+  #
+  def current_category
+    @current_category ||= params[:id].split('/').map { |param_id| Category.find(param_id) }.compact.first
   end
 
 end

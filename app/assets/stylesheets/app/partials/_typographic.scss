@@ -36,9 +36,11 @@ p{
   font-size: $font-size-base;
   color: $color-gray-l;
   line-height: 1.5;
-  padding-bottom: 2em;
+  padding-bottom: $text-padding;
 }
 
 p.small{
   font-size: $font-size-base*0.7;
 }
+
+

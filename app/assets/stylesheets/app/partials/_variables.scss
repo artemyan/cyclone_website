@@ -16,8 +16,14 @@ $font-family-italic: 'HighwaySansProItalic';
 
 $font-size-base: 16px;
 
+$font-size-header-menu: $font-size-base;
+$font-size-header-phone: 24px;
+
+$text-padding: 2em;
 
 // GRID
 $container-width: 1200px;
 $gutter: 50px;
 $strap-gutter: 80px;
+
+$offset-header-menu-top: ($font-size-header-phone - $font-size-header-menu)/$font-size-header-phone + em;

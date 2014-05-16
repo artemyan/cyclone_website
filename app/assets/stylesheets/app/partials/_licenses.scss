@@ -3,6 +3,7 @@
 
   @include clearfix();
   padding-right: 20px;
+  margin-bottom: 10px;
 
   .license-preview{
     width: $preview-width;
@@ -15,5 +16,5 @@
     }
   }
 
-  h5, p{ padding-left: $preview-width; }
+  h4, h5, p{ padding-left: $preview-width + 10px; }
 }
