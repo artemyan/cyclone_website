@@ -5,8 +5,9 @@ header, .header{
     @include inline-block-list;
     font-family: $font-family-bold;
     font-size: $font-size-header-menu;
-
     margin-top: $offset-header-menu-top;
+    text-align: right;
+    padding-right: 3em;
 
     li { @include inline-block-list-item(10px); }
     li a { @include link($color-red); line-height: 1.1; }

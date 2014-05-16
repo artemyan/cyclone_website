@@ -12,9 +12,9 @@ SimpleNavigation::Configuration.run do |navigation|
     # primary.auto_highlight = false
 
     primary.item :company, 'компания', page_path('company')
-    primary.item :career, 'карьера', page_path('career')
+    # primary.item :career, 'карьера', page_path('career')
     primary.item :licences, 'лицензии', page_path('licenses')
-    primary.item :pressroom, 'пресс-центр', page_path('press_room')
+    # primary.item :pressroom, 'пресс-центр', page_path('press_room')
     primary.item :contacts, 'контакты', page_path('contacts')
   end
 end

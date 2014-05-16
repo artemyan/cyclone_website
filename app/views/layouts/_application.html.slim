@@ -11,7 +11,7 @@ html
       - if yield(:banner).blank?
         = section_strap
       - else
-        .strap = yield(:banner)
+        .strap.empty = yield(:banner)
 
       .content
         = yield :content
