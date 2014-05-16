@@ -7,7 +7,7 @@ window.onload = function () {
         btns_top_offset = 336;
 
 
-    var path_attrs = { stroke: '#f00', cursor: 'pointer', fill: '#f00', 'fill-opacity': 0.1 };
+    var path_attrs = { stroke: '', cursor: 'pointer', fill: '#000', 'fill-opacity': 0.01, 'stroke-width': 0 };
     var text_attrs = { font: '32px HighwaySansProBold', fill: '#ea675b', 'fill-opacity': 1, stroke: 0 };
     var img_attrs = {  };
 
@@ -144,7 +144,14 @@ window.onload = function () {
     var left_bottom_img = paper.image("/assets/home-menu-sprites/tech_service.png", padding_left, btns_top_offset, 553, btn_height).attr(img_attrs);
     var right_top_img = paper.image("/assets/home-menu-sprites/soft.png", padding_left*2 + btn_offset + btn_width + 3, 0, 553, btn_height).attr(img_attrs);
     var right_bottom_img = paper.image("/assets/home-menu-sprites/medicine.png", padding_left*2 + btn_offset + btn_width + 3, btns_top_offset, 553, btn_height).attr(img_attrs);
-    var center_img = paper.image("/assets/home-menu-sprites/map.png", padding_left*2 + btn_offset + btn_width + 3, btns_top_offset, 553, btn_height).attr(img_attrs);
+    var center_img = paper.image("/assets/home-menu-sprites/map.png", padding_left + btn_width + 15, 10 , 372, 638).attr(img_attrs);
+
+
+    var left_top_img_hover = paper.image("/assets/home-menu-sprites/engineering_hover.png", padding_left, 0, 553, btn_height).attr(img_attrs).hide();
+    var left_bottom_img_hover = paper.image("/assets/home-menu-sprites/tech_service_hover.png", padding_left, btns_top_offset, 553, btn_height).attr(img_attrs).hide();
+    var right_top_img_hover = paper.image("/assets/home-menu-sprites/soft_hover.png", padding_left * 2 + btn_offset + btn_width + 3, 0, 553, btn_height).attr(img_attrs).hide();
+    var right_bottom_img_hover = paper.image("/assets/home-menu-sprites/medicine_hover.png", padding_left * 2 + btn_offset + btn_width + 3, btns_top_offset, 553, btn_height).attr(img_attrs).hide();
+    var center_img_hover = paper.image("/assets/home-menu-sprites/map_hover.png", padding_left + btn_width + 15, 10, 372, 638).attr(img_attrs).hide();
 
 //    var left_top_txt = paper.text(180, 150, "ИНЖЕНЕРНЫЕ\nСИСТЕМЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
 //    var left_bottom_txt = paper.text(180, 500, "ЭКСПЛУАТАЦИЯ\nИ ТО ОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'start' });
@@ -152,11 +159,11 @@ window.onload = function () {
 //    var right_bottom_txt = paper.text(780, 500, "ОБЪЕКТЫ\nМЕДИЦИНЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
 //    var center_txt = paper.text(600, 320, "КАРТА\nОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'middle' });
 
-    var left_top_path = paper.path(left_top_coords).attr(path_attrs).attr({href: '/facilities'});
-    var left_bottom_path = paper.path(left_bottom_coords).attr(path_attrs).attr({href: '/facilities'});
-    var right_top_path = paper.path(right_top_coords).attr(path_attrs).attr({href: '/facilities'});
-    var right_bottom_path = paper.path(right_bottom_coords).attr(path_attrs).attr({href: '/facilities'});
-    var center_path = paper.path(center_coords).attr(path_attrs).attr({href: '/facilities'});
+    var left_top_path = paper.path(left_top_coords).attr(path_attrs).attr({title: 'Инженерные системы', href: '/facilities/engineering_systems'});
+    var left_bottom_path = paper.path(left_bottom_coords).attr(path_attrs).attr({title: 'Эксплуатация и ТО объектов', href: '/facilities/ekspluatacia_to_objectov'});
+    var right_top_path = paper.path(right_top_coords).attr(path_attrs).attr({title: 'Программно-технические комплексы', href: '/facilities/programmno_tehnicheskie_kompleksi'});
+    var right_bottom_path = paper.path(right_bottom_coords).attr(path_attrs).attr({title: 'Объекты медицины', href: '/facilities/objecti_mediciny'});
+    var center_path = paper.path(center_coords).attr(path_attrs).attr({title: 'Карта объектов', href: '/facilities'});
 
 
 
@@ -164,56 +171,47 @@ window.onload = function () {
     function default_btn_styles(item){
         item.hide()
     };
-    function default_txt_styles(item){
-        item.attr(text_attrs);
-    };
 
     function hover_btn_styles(item){
         item.show()
     };
-    function hover_txt_styles(item){
-        item.attr({ fill: '#fff', 'fill-opacity': 1 });
-    };
 
 
-    var path_hover = function(img, txt){
+
+    var path_hover = function(img){
         if(img)
             hover_btn_styles(img);
-        if(txt)
-            hover_txt_styles(txt);
     };
-    var path_unhover = function(img, txt){
+    var path_unhover = function(img){
         if(img)
             default_btn_styles(img);
-        if(txt)
-            default_txt_styles(txt);
     };
 
 
-//    left_top_path.hover(
-//        function(){path_hover(null, left_top_txt)},
-//        function(){path_unhover(null, left_top_txt)}
-//    );
-//
-//    left_bottom_path.hover(
-//        function(){path_hover(left_bottom_img, left_bottom_txt)},
-//        function(){path_unhover(left_bottom_img, left_bottom_txt)}
-//    );
-//
-//    right_top_path.hover(
-//        function(){path_hover(right_top_img, right_top_txt)},
-//        function(){path_unhover(right_top_img, right_top_txt)}
-//    );
-//
-//    right_bottom_path.hover(
-//        function(){path_hover(null, right_bottom_txt)},
-//        function(){path_unhover(null, right_bottom_txt)}
-//    );
-//
-//    center_path.hover(
-//        function(){path_hover(null, center_txt)},
-//        function(){path_unhover(null, center_txt)}
-//    );
+    left_top_path.hover(
+        function(){path_hover(left_top_img_hover)},
+        function(){path_unhover(left_top_img_hover)}
+    );
+
+    left_bottom_path.hover(
+        function(){path_hover(left_bottom_img_hover)},
+        function(){path_unhover(left_bottom_img_hover)}
+    );
+
+    right_top_path.hover(
+        function(){path_hover(right_top_img_hover)},
+        function(){path_unhover(right_top_img_hover)}
+    );
+
+    right_bottom_path.hover(
+        function(){path_hover(right_bottom_img_hover)},
+        function(){path_unhover(right_bottom_img_hover)}
+    );
+
+    center_path.hover(
+        function(){path_hover(center_img_hover)},
+        function(){path_unhover(center_img_hover)}
+    );
 
     left_top_path.click(function(){ window.location = this.attrs.href; });
     left_bottom_path.click(function(){ window.location = this.attrs.href; });

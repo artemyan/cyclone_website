@@ -8,7 +8,9 @@
   margin: 0 auto;
   width: $container-width;
   padding: $gutter/3 $gutter;
-  background: rgba(255,0,0,0.1);
+
+  // debug container background
+  //background: rgba(255,0,0,0.1);
 }
 
 .cols{ padding: 0 $strap-gutter; }
