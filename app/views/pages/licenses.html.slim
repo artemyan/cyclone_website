@@ -5,7 +5,7 @@ h2 Лицензии
 - licenses.each do |license|
   .col.col-license
     .license
-      = link_to license.file_url, class: 'license-preview' do
+      = link_to license.file_url, class: 'license-preview', target: '_blank' do
         = image_tag license.preview_url
       h4 = license.title
       p = license.description

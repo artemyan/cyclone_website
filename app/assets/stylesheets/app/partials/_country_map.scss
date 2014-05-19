@@ -23,6 +23,8 @@ $el: '.country-map';
   width: 238px;
   position: absolute;
 
+  box-shadow: 1px 17px 10px -10px rgba(0, 0, 0, 0.4);
+
   h5 {
     &, a, a:hover, a:active, a:visited {
       font-family: $font-family-medium;
