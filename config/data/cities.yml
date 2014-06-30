@@ -1,7 +1,7 @@
 cities:
   - id: spb
     title: Санкт-Петербург
-    x: 75
+    x: 85
     y: 181
 
   - id: moscow
@@ -11,12 +11,12 @@ cities:
 
   - id: kirishi
     title: Кириши
-    x: 100
+    x: 120
     y: 191
 
   - id: sestroreck
     title: Сестрорецк
-    x: 212
-    y: 218
+    x: 60
+    y: 168
 
 
