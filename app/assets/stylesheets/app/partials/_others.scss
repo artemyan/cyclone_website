@@ -7,25 +7,27 @@
 }
 
 $anim_sec: 0.1s;
+$anim_action: transform;
+$anim_func: ease-in-out;
 
 .invisible{
   opacity: 0;
-
-  -webkit-transition: opacity $anim_sec ease-in-out;
-  -moz-transition: opacity $anim_sec ease-in-out;
-  -o-transition: opacity $anim_sec ease-in-out;
-  transition: opacity $anim_sec ease-in-out;
+  transform: translateY(-10px);
+  -webkit-transition: $anim_action $anim_sec $anim_func;
+  -moz-transition: $anim_action $anim_sec $anim_func;
+  -o-transition: $anim_action $anim_sec $anim_func;
+  transition: $anim_action $anim_sec $anim_func;
 
   z-index: -1;
 }
 
 .visible{
   opacity: 0.99;
-
-  -webkit-transition: opacity $anim_sec ease-in-out;
-  -moz-transition: opacity $anim_sec ease-in-out;
-  -o-transition: opacity $anim_sec ease-in-out;
-  transition: opacity $anim_sec ease-in-out;
+  transform: translateY(0px);
+  -webkit-transition: $anim_action $anim_sec $anim_func;
+  -moz-transition: $anim_action $anim_sec $anim_func;
+  -o-transition: $anim_action $anim_sec $anim_func;
+  transition: $anim_action $anim_sec $anim_func;
 
   z-index: 2;
 }
