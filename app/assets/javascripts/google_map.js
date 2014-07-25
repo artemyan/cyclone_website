@@ -5,7 +5,7 @@ $(document).ready(function(){
             handler = Gmaps.build('Google');
             handler.buildMap({
                     provider: {
-                        disableDefaultUI: false,
+//                        disableDefaultUI: false,
                         disableDoubleClickZoom: true,
                         panControl: false,
                         panControlOptions: false,
