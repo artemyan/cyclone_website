@@ -1,1 +1,1 @@
-rvm use 1.9.3@cyclone --create
+rvm use 1.9.3-p484@cyclone --create
