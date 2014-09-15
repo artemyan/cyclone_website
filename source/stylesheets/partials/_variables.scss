@@ -1,0 +1,29 @@
+$color-green: #2fb546;
+$color-sea-green: #1a7565;
+$color-red: #e63d4d;
+$color-red-l: #ec685c;
+$color-gray-l: #666;
+$color-gray: #4b5348;
+$color-gray-d: #323e30;
+$color-blue: #3498db;
+
+
+$font-family-thin: 'HighwaySansProThin';
+$font-family-regular: 'HighwaySansProRegular';
+$font-family-medium: 'HighwaySansProMedium';
+$font-family-bold: 'HighwaySansProBold';
+$font-family-italic: 'HighwaySansProItalic';
+
+$font-size-base: 16px;
+
+$font-size-header-menu: 12px;
+$font-size-header-phone: 24px;
+
+$text-padding: 2em;
+
+// GRID
+$container-width: 1200px;
+$gutter: 50px;
+$strap-gutter: 80px;
+
+$offset-header-menu-top: ($font-size-header-phone - $font-size-header-menu)/$font-size-header-phone + em;

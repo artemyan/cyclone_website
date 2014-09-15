@@ -1,0 +1,44 @@
+@mixin link($color: $color-blue, $hover-color: darken($color, 10%)){
+  display: inline;
+  border-bottom: 1px solid;
+
+  line-height: 1.3;
+
+  &, &:visited {
+    border-color: $color;
+    color: $color;
+  }
+
+  &, &:hover, &:visited, &:active{ text-decoration: none; }
+
+  &:hover, &:active{
+    border-color: $hover-color;
+    color: $hover-color;
+  }
+}
+
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin arrow-bottom($color: white){
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: $color;
+  border-width: 10px;
+  margin-left: -10px;
+}

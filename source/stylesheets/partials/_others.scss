@@ -1,0 +1,33 @@
+#main{
+  margin-left: -$gutter;
+  position: relative;
+  width: 1200px;
+
+  img{ position: absolute; top: 0; left: 0; z-index: -1;}
+}
+
+$anim_sec: 0.1s;
+$anim_action: transform;
+$anim_func: ease-in-out;
+
+.invisible{
+  opacity: 0;
+  transform: translateY(-10px);
+  -webkit-transition: $anim_action $anim_sec $anim_func;
+  -moz-transition: $anim_action $anim_sec $anim_func;
+  -o-transition: $anim_action $anim_sec $anim_func;
+  transition: $anim_action $anim_sec $anim_func;
+
+  z-index: -1;
+}
+
+.visible{
+  opacity: 0.99;
+  transform: translateY(0px);
+  -webkit-transition: $anim_action $anim_sec $anim_func;
+  -moz-transition: $anim_action $anim_sec $anim_func;
+  -o-transition: $anim_action $anim_sec $anim_func;
+  transition: $anim_action $anim_sec $anim_func;
+
+  z-index: 2;
+}

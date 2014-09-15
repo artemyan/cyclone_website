@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="width=1200, user-scalable=yes" name="viewport" /
+    /! Always force latest IE rendering engine or request Chrome Frame
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+
+    link href=image_path('favicon.ico') rel="icon" type="image/ico" /
+    link href=image_path('favicon.png') rel="icon" type="image/png" /
+
+
+    /! Use title if it's in the page YAML frontmatter
+    title == data.page.title || "Компания Циклон"
+
+    == stylesheet_link_tag "all"
+    == javascript_include_tag  "all"
+
+    script src="//maps.google.com/maps/api/js?v=3.13&amp;sensor=false&amp;libraries=geometry" type="text/javascript"
+    script src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js" type="text/javascript"
+
+  .container
+    == yield
+
