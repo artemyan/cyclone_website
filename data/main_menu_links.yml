@@ -6,16 +6,16 @@ directions:
   name: "Направления"
   nested:
     engineering:
-      path: "directions/engineering"
+      path: "engineering"
       name: "Инженерные системы"
     exploitation:
-      path: "directions/exploitation"
+      path: "exploitation"
       name: "Эксплуатация и обслуживание объектов и комплексов"
     tech:
-      path: "directions/tech"
+      path: "tech"
       name: "Программно-технические решения"
     high-tech:
-      path: "directions/high-tech"
+      path: "hitech"
       name: "Создание высокотехнологических решений"
 licenses:
   path: "licenses"

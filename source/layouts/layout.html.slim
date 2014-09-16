@@ -9,8 +9,6 @@ html
     link href=image_path('favicon.ico') rel="icon" type="image/ico" /
     link href=image_path('favicon.png') rel="icon" type="image/png" /
 
-
-    /! Use title if it's in the page YAML frontmatter
     title == data.page.title || "Компания Циклон"
 
     == stylesheet_link_tag "all"
@@ -22,4 +20,3 @@ html
   .container
     = partial "shared/menu"
     == yield
-

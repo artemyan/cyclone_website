@@ -1,3 +1,8 @@
+# Allows view files to be stored into views folder
+# @source https://gist.github.com/Arcovion/2586eb92389967715da4
+# @example
+#   in config.rb
+#     activate :dir_manager
 class Middleman::Extensions::DirManager < Middleman::Extension
   register :dir_manager
   option :dirs, {source: 'views', destination: '', add: [], remove: ['', 'views']}
