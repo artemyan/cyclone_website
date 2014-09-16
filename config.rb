@@ -20,7 +20,11 @@ set :layouts_dir, "layouts"
 require 'lib/category_presenter'
 activate :category_presenter
 
+
+activate :dir_manager
 activate :directory_indexes
+
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
