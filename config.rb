@@ -64,11 +64,11 @@ set :fonts_dir, 'assets/fonts'
 
 set :partials_dir, "views/partials"
 
-set :layouts_dir, "views/layouts"
+set :layouts_dir, "layouts"
 
 activate :dir_manager
 
-activate :directory_indexes
+# activate :directory_indexes
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
