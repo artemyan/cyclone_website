@@ -17,7 +17,8 @@ set :partials_dir, "partials"
 
 set :layouts_dir, "layouts"
 
-activate :dir_manager
+require 'lib/category_presenter'
+activate :category_presenter
 
 activate :directory_indexes
 # Build-specific configuration
@@ -36,5 +37,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
 end
 
