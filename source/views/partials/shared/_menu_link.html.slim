@@ -1,8 +1,0 @@
-- if link.nested.present?
-  p
-    = link.name
-  nav.menu.menu__nested
-    - link.nested.each do |__name, nested_link|
-      = link_to nested_link.name, nested_link.path
-- else
-  = link_to link.name, link.path

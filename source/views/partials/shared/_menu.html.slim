@@ -1,3 +1,10 @@
 nav.menu.menu--main
-  - data.main_menu_links.each do |__name, data|
-    = partial("shared/menu_link", locals: {link: data})
+  - data.main_menu_links.each do |__name, link|
+    - if link.nested.present?
+      p
+        = link.name
+      nav.menu.menu__nested
+        - link.nested.each do |__name, nested_link|
+          = link_to nested_link.name, nested_link.path
+    - else
+      = link_to link.name, link.path
