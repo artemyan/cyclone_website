@@ -13,7 +13,7 @@ set :images_dir, 'assets/images'
 
 set :fonts_dir, 'assets/fonts'
 
-set :partials_dir, "views/partials"
+set :partials_dir, "partials"
 
 set :layouts_dir, "layouts"
 
