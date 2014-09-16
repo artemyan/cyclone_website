@@ -1,25 +1,25 @@
 company:
-  path: "company.html"
+  path: "company"
   name: "Компания"
 directions:
   path: ""
   name: "Направления"
   nested:
     engineering:
-      path: "directions/engineering.html"
+      path: "directions/engineering"
       name: "Инженерные системы"
     exploitation:
-      path: "directions/exploitation.html"
+      path: "directions/exploitation"
       name: "Эксплуатация и обслуживание объектов и комплексов"
     tech:
-      path: "directions/tech.html"
+      path: "directions/tech"
       name: "Программно-технические решения"
     high-tech:
-      path: "directions/high-tech.html"
+      path: "directions/high-tech"
       name: "Создание высокотехнологических решений"
 licenses:
-  path: "licenses.html"
+  path: "licenses"
   name: "Лицензии"
 objects:
-  path: "objects.html"
+  path: "objects"
   name: "Карта объектов"
