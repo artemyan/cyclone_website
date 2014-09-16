@@ -1,3 +1,5 @@
+# Contains info about menu links
+# @note is used in shared/menu partial
 - id: company
   title: Компания
 
