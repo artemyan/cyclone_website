@@ -10,7 +10,7 @@ class CategoryPresenter < Middleman::Extension
     end
 
     def category_path(id)
-      "facilities/#{id}" if id
+      "#{id}" if id
     end
 
     def categories_find(id)

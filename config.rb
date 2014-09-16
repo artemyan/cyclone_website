@@ -18,7 +18,9 @@ set :partials_dir, "partials"
 set :layouts_dir, "layouts"
 
 require 'lib/category_presenter'
+require 'lib/facility_presenter'
 activate :category_presenter
+activate :facility_presenter
 
 
 activate :dir_manager

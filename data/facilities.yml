@@ -1,66 +1,65 @@
-facilities:
-  - id: neftepererobativaushii_zavod_v_kirishah
-    city_id: kirishi
-    category_id: engineering_systems
-    title: Нефтеперерабатывающий завод в г. Кириши.
+- id: neftepererobativaushii_zavod_v_kirishah
+  city_id: kirishi
+  category_id: engineering_systems
+  title: Нефтеперерабатывающий завод в г. Кириши.
 
-  - id: uzos_spb
-    city_id: spb
-    category_id: engineering_systems
-    title: Юго-Западные очистные сооружения Санкт-Петербурга
+- id: uzos_spb
+  city_id: spb
+  category_id: engineering_systems
+  title: Юго-Западные очистные сооружения Санкт-Петербурга
 
-  - id: amerikanskie_geleznie_dorogi
-    city_id: spb
-    category_id: engineering_systems
-    title: Строительство инженерных систем зданий депо «Американские мосты» для нужд ОАО «РЖД».
+- id: amerikanskie_geleznie_dorogi
+  city_id: spb
+  category_id: engineering_systems
+  title: Строительство инженерных систем зданий депо «Американские мосты» для нужд ОАО «РЖД».
 
-  - id: upravlenie_energiei_tikurilla
-    city_id: spb
-    category_id: engineering_systems
-    title: Разработка и внедрение высокотехнологичных слаботочных сетей и автоматизация учета и управления энергией на заводе «ТЕКС» для нужд ООО «Тиккурила»
+- id: upravlenie_energiei_tikurilla
+  city_id: spb
+  category_id: engineering_systems
+  title: Разработка и внедрение высокотехнологичных слаботочных сетей и автоматизация учета и управления энергией на заводе «ТЕКС» для нужд ООО «Тиккурила»
 
-  - id: rossiiskaya_nacionalnaya_biblioteka
-    city_id: spb
-    category_id: engineering_systems
-    title: Оснащение комплексными системами безопасности Федерального государственного бюджетного учреждения «Российская нацио- нальная библиотека»
+- id: rossiiskaya_nacionalnaya_biblioteka
+  city_id: spb
+  category_id: engineering_systems
+  title: Оснащение комплексными системами безопасности Федерального государственного бюджетного учреждения «Российская нацио- нальная библиотека»
 
-  - id: zashitnie_soorygenia_na_plotine
-    city_id: spb
-    category_id: ekspluatacia_to_objectov
-    title: КЗС СПБ
+- id: zashitnie_soorygenia_na_plotine
+  city_id: spb
+  category_id: ekspluatacia_to_objectov
+  title: КЗС СПБ
 
-  - id: zashitnie_soorygenia_na_plotine
-    city_id: spb
-    category_id: programmno_tehnicheskie_kompleksi
-    title: Системы автоматизированного контроля за эксплуатацией
+- id: zashitnie_soorygenia_na_plotine
+  city_id: spb
+  category_id: programmno_tehnicheskie_kompleksi
+  title: Системы автоматизированного контроля за эксплуатацией
 
-  - id: spb_nauchno_issledovatelskii_institut_ftiziopulmonologii
-    city_id: spb
-    category_id: objecti_mediciny
-    title: «Санкт-Петербургский научно-исследовательский институт фтизиопульмонологии»
+- id: spb_nauchno_issledovatelskii_institut_ftiziopulmonologii
+  city_id: spb
+  category_id: objecti_mediciny
+  title: «Санкт-Петербургский научно-исследовательский институт фтизиопульмонологии»
 
-  - id: moscow_oblastnoi_nauchno_issledovatelskii_institut_akusherstva_i_ginekologii
-    city_id: moscow
-    category_id: objecti_mediciny
-    title: «Московский областной научно-иссле- довательский институт акушерства и гинекологии»
+- id: moscow_oblastnoi_nauchno_issledovatelskii_institut_akusherstva_i_ginekologii
+  city_id: moscow
+  category_id: objecti_mediciny
+  title: «Московский областной научно-иссле- довательский институт акушерства и гинекологии»
 
-  - id: moscow_nauchno_issledovatelskii_insitut_skoroi_pomoshi_sklifosofskogo
-    city_id: moscow
-    category_id: objecti_mediciny
-    title: «Научно-исследовательский институт скорой помощи им. Н.В. Склифосовского Департамента здравоохранения города Москвы»
+- id: moscow_nauchno_issledovatelskii_insitut_skoroi_pomoshi_sklifosofskogo
+  city_id: moscow
+  category_id: objecti_mediciny
+  title: «Научно-исследовательский институт скорой помощи им. Н.В. Склифосовского Департамента здравоохранения города Москвы»
 
-  - id: centralnii_klinicheskii_gospital_federalnoi_tamogennoi_slugbi
-    city_id: moscow
-    category_id: objecti_mediciny
-    title: Центральный Клинический Госпиталь Федеральной Таможенной Службы России
+- id: centralnii_klinicheskii_gospital_federalnoi_tamogennoi_slugbi
+  city_id: moscow
+  category_id: objecti_mediciny
+  title: Центральный Клинический Госпиталь Федеральной Таможенной Службы России
 
-  - id: gorodskaya_bolnica_nomer_40
-    city_id: sestroreck
-    category_id: objecti_mediciny
-    title: Санкт-Петербургское государственное учреждение Здравоохранения Городская больница №40 Санкт – Петербург
+- id: gorodskaya_bolnica_nomer_40
+  city_id: sestroreck
+  category_id: objecti_mediciny
+  title: Санкт-Петербургское государственное учреждение Здравоохранения Городская больница №40 Санкт – Петербург
 
 
-  - id: nationalnii_mediko_hirurgicheskii_center_pirogova
-    city_id: spb
-    category_id: objecti_mediciny
-    title: «Национальный медико-хирургический Центр им. Н.И. Пирогова» Минздрава России
+- id: nationalnii_mediko_hirurgicheskii_center_pirogova
+  city_id: spb
+  category_id: objecti_mediciny
+  title: «Национальный медико-хирургический Центр им. Н.И. Пирогова» Минздрава России
