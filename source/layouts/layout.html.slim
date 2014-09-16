@@ -18,5 +18,16 @@ html
     script src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js" type="text/javascript"
 
   .container
-    = partial "shared/menu"
+    header
+      .logo.col.col-header-logo
+        = link_to '/' do
+          = image_tag 'logo.png', alt: 'Циклон'
+
+      = partial "shared/menu"
+      .contacts.col.col-header-contacts
+        .phone
+          .small = '(812)'
+          .big 648-02-50
+          .link = link_to 'все контакты'
+
     == yield
