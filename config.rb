@@ -1,9 +1,6 @@
 require 'slim'
 Slim::Engine.disable_option_validator!
 
-require 'lib/dir_manager.rb'
-
-require 'slim'
 
 set :css_dir, 'assets/stylesheets'
 
@@ -23,6 +20,7 @@ activate :category_presenter
 activate :facility_presenter
 
 
+require 'lib/dir_manager.rb'
 activate :dir_manager
 activate :directory_indexes
 

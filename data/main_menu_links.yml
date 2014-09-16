@@ -1,25 +1,12 @@
-company:
-  path: "company"
-  name: "Компания"
-directions:
-  path: ""
-  name: "Направления"
-  nested:
-    engineering:
-      path: "engineering"
-      name: "Инженерные системы"
-    exploitation:
-      path: "exploitation"
-      name: "Эксплуатация и обслуживание объектов и комплексов"
-    tech:
-      path: "tech"
-      name: "Программно-технические решения"
-    high-tech:
-      path: "hitech"
-      name: "Создание высокотехнологических решений"
-licenses:
-  path: "licenses"
-  name: "Лицензии"
-objects:
-  path: "objects"
-  name: "Карта объектов"
+- id: company
+  title: Компания
+
+- id: ""
+  title: Направления
+  nested: true
+
+- id: licenses
+  title: Лицензии
+
+- id: objects
+  title: Карта объектов

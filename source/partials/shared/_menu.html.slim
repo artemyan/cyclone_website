@@ -1,10 +1,10 @@
 nav.menu.menu--main
-  - data.main_menu_links.each do |__name, link|
-    - if link.nested.present?
+  - data.main_menu_links.each do |link|
+    - if link.nested
       p
-        = link.name
+        = link.title
       nav.menu.menu__nested
-        - link.nested.each do |__nested_name, nested_link|
-          = link_to nested_link.name, nested_link.path
+        - categories.each do |category_link|
+          = link_to category_link.title, category_link.id
     - else
-      = link_to link.name, link.path
+      = link_to link.title, link.id

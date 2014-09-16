@@ -14,7 +14,7 @@ class CategoryPresenter < Middleman::Extension
     end
 
     def categories_find(id)
-      data.categories.select { |c| c.id==id }.first
+      categories.select { |c| c.id==id }.first
     end
 
   end

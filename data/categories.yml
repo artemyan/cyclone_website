@@ -1,12 +1,11 @@
-
-- id: engineering_systems
+- id: engineering
   title: Инженерные системы
 
-- id: ekspluatacia_to_objectov
-  title: Эксплуатация и ТО объектов
+- id: exploitation
+  title: Эксплуатация и обслуживание объектов и комплексов
 
-- id: programmno_tehnicheskie_kompleksi
-  title: Программно-технические комплексы
+- id: tech
+  title: Программно-технические решения
 
-- id: objecti_mediciny
-  title: Объекты медицины
+- id: hitech
+  title: Создание высокотехнологических решений
