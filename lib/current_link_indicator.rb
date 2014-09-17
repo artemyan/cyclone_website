@@ -12,7 +12,7 @@ class CurrentLinkIndicator < Middleman::Extension
       else
         current = "/#{request.path}".include?(url)
       end
-      "<a href='#{url}' #{current ? 'class="selected menu__nested__link"' : 'class="not-selected menu__nested__link"' }>#{label}</a>"
+      "<a href='/#{url}' #{current ? 'class="selected menu__nested__link"' : 'class="not-selected menu__nested__link"' }>#{label}</a>"
     end
 
   end
