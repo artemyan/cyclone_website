@@ -35,30 +35,30 @@
 
 - id: spb_nauchno_issledovatelskii_institut_ftiziopulmonologii
   city_id: spb
-  category_id: tech
+  category_id: programmes
   title: «Санкт-Петербургский научно-исследовательский институт фтизиопульмонологии»
 
 - id: moscow_oblastnoi_nauchno_issledovatelskii_institut_akusherstva_i_ginekologii
   city_id: moscow
-  category_id: tech
+  category_id: programmes
   title: «Московский областной научно-иссле- довательский институт акушерства и гинекологии»
 
 - id: moscow_nauchno_issledovatelskii_insitut_skoroi_pomoshi_sklifosofskogo
   city_id: moscow
-  category_id: tech
+  category_id: programmes
   title: «Научно-исследовательский институт скорой помощи им. Н.В. Склифосовского Департамента здравоохранения города Москвы»
 
 - id: centralnii_klinicheskii_gospital_federalnoi_tamogennoi_slugbi
   city_id: moscow
-  category_id: tech
+  category_id: programmes
   title: Центральный Клинический Госпиталь Федеральной Таможенной Службы России
 
 - id: gorodskaya_bolnica_nomer_40
   city_id: sestroreck
-  category_id: tech
+  category_id: programmes
   title: Санкт-Петербургское государственное учреждение Здравоохранения Городская больница №40 Санкт – Петербург
 
 - id: nationalnii_mediko_hirurgicheskii_center_pirogova
   city_id: spb
-  category_id: tech
+  category_id: programmes
   title: «Национальный медико-хирургический Центр им. Н.И. Пирогова» Минздрава России
