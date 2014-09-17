@@ -1,3 +1,9 @@
+---
+head_title: Карта объектов
+---
+
+= partial "facilities/sidebar"
+
 .country-map
   - cities.each do |city|
     = link_to '', '#', class: 'country-map-pointer js-map-pointer', style: "left: #{city.x}px; top: #{city.y}px", data: { target: city.id }
