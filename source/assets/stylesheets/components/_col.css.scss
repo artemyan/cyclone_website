@@ -1,0 +1,40 @@
+// специфические размеры колонок
+// под различные информационные блоки
+
+$el: '.col';
+
+#{$el}{
+  @include inline-block-list-item(0);
+  vertical-align: top;
+  white-space: normal;
+
+
+  // шапка сайта
+  &.m-header-logo {
+    width: 36.9%;
+  }
+  &.m-header-menu {
+    width: 42.9%;
+  }
+
+  &.m-header-contacts {
+    width: 19.9%;
+  }
+
+  // ширина левого сайдбара в двуколоночной верстке
+  &.m-sidebar {
+    width: 30.9%;
+    margin-top: 93px;
+  }
+
+  // основной контент в двуколоночной верстке
+  &.m-main-content {
+    width: 68.9%;
+  }
+
+  // колонка одной лицензии в списке лицензии
+  &.m-license {
+    width: 49.9%;
+  }
+
+}

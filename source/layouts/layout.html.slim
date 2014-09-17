@@ -19,15 +19,28 @@ html
 
   .container
     header
-      .logo.col.col-header-logo
+      .logo.col.m-header-logo
         = link_to '/' do
           = image_tag 'logo.png', alt: 'Циклон'
 
-      = partial "shared/menu"
-      .contacts.col.col-header-contacts
+      .col.m-header-menu = partial 'shared/menu'
+      .contacts.col.m-header-contacts
         .phone
           .small = '(812)'
           .big 648-02-50
           .link = link_to 'все контакты'
 
-    == yield
+
+
+    / в этом блоке определяем сколько нужно колонок в шаблоне
+    / если у страницы есть что рисовать в сайдбаре,
+    / то значит нужно две колонки
+    - if content_for?(:sidebar) || content_for?(:sidebar_menu)
+      .cols
+        .col.m-sidebar
+          == yield_content :sidebar
+          .sidebar-menu == yield_content :sidebar_menu
+        .col.m-main-content == yield
+
+    - else
+      == yield

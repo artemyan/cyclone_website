@@ -1,9 +1,3 @@
-.col{
-  @include inline-block-list-item(0);
-  vertical-align: top;
-  white-space: normal;
-}
-
 .container{
   margin: 0 auto;
   width: $container-width;
@@ -15,15 +9,3 @@
 
 .cols{ padding: 0 $strap-gutter; }
 
-$full-width: 1200px;
-
-.col-header-logo{ width: 36.9%; }
-.col-header-menu{ width: 42.9%;}
-.col-header-contacts{ width: 19.9%;}
-
-.col-content-left{ width: 30.9%; margin-top: 93px; }
-.col-content-right{ width: 68.9%; }
-
-.col-license{ width: 49.9%;}
-
-.col-map{ width: 100%; height: 400px;}
