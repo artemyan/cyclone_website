@@ -9,22 +9,22 @@
 
   li{
     padding-bottom: 1em;
-    a { @include link($color-gray-l, $color-red); }
-  }
+    a {
+      @include link($color-gray-l, $color-red);
+      // активный пункт меню
+      &.selected{
+        color: $color-red;
+        border-color: transparent;
+        // у активного пункта меню выставляем иконку шеврона
+        &:before{
+          content: '>';
+          display: inline-block;
 
-  // активный пункт меню
-  li.selected{
-    // у активного пункта меню выставляем иконку шеврона
-    &:before{
-      content: '>';
-      display: inline-block;
-
-      // @extend .fa !optional;
-      // @extend .fa-chevron-right !optional;
-      padding-right: 2px;
+          // @extend .fa !optional;
+          // @extend .fa-chevron-right !optional;
+          padding-right: 2px;
+        }
+      }
     }
-
-    &, a.selected{ color: $color-red; border-color: transparent; }
   }
-
 }
