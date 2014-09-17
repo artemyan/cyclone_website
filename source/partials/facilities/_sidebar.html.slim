@@ -1,0 +1,3 @@
+ul.sidebar-menu--facilities
+  - sidebar_links.each do |link|
+    = current_link_to(link.title, link.id)

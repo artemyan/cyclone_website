@@ -17,3 +17,7 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 gem 'font-awesome-middleman'
 gem 'jquery-middleman'
+
+
+# Activates breadcrumbs
+# gem "middleman-breadcrumbs"

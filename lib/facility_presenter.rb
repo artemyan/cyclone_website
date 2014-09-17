@@ -27,8 +27,15 @@ class FacilityPresenter < Middleman::Extension
       facilities.group_by { |x| x.category_id }
     end
 
+
+    # Returns links for a facilities page sidebar
+    # @note is called at facilities page
+    # @note facilities must be last in main_menu_links or it should be changed
+    def sidebar_links
+      data.categories.dup << data.main_menu_links.last
+    end
+
   end
 end
-
 
 ::Middleman::Extensions.register(:facility_presenter, FacilityPresenter)

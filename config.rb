@@ -32,6 +32,8 @@ activate :directory_indexes
 require 'lib/current_link.rb'
 activate :current_link
 
+# activate :breadcrumbs
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
