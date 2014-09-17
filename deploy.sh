@@ -30,6 +30,7 @@ git reset HEAD -- .gitignore_deploying
 git reset HEAD -- deploy.sh
 git reset HEAD -- Gemfile
 git reset HEAD -- Gemfile.lock
+git reset HEAD -- helpers
 
 git add build
 
