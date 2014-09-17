@@ -1,0 +1,14 @@
+.country-map
+  - cities.each do |city|
+    = link_to '', '#', class: 'country-map-pointer js-map-pointer', style: "left: #{city.x}px; top: #{city.y}px", data: { target: city.id }
+
+  - facilities_by_city.each do |city_id, facilities|
+    .country-map-popup.invisible.js-popup.js-map-popup data-target=city_id
+      = link_to '#', class: 'close js-popup-close' do
+        span.fa.fa-times-circle
+
+      h5 = cities_find(city_id).title
+      - facilities[0..2].each do |facility|
+        p = link_to facility.title, facility_path(facility.id)
+
+  = image_tag 'russian_map.png'

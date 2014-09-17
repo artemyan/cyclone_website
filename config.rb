@@ -17,9 +17,11 @@ set :layouts_dir, "layouts"
 require 'lib/category_presenter'
 require 'lib/facility_presenter'
 require 'lib/license_presenter'
+require 'lib/city_presenter'
 activate :category_presenter
 activate :facility_presenter
 activate :license_presenter
+activate :city_presenter
 
 
 require 'lib/dir_manager.rb'
