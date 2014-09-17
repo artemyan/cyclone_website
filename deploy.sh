@@ -32,7 +32,7 @@ git reset HEAD -- Gemfile
 git reset HEAD -- Gemfile.lock
 git reset HEAD -- helpers
 
-git add build
+git add .
 
 # all commits with same commit-text. :)
 git commit -m 'auto deploy'
