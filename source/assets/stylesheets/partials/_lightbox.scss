@@ -1,0 +1,14 @@
+.lightbox{
+  position: fixed;
+  background: rgba(6,6,6,0.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  & > img {
+    display: block;
+    margin: 15px auto;
+    height: 95%;
+    width: auto;
+  }
+}
