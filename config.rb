@@ -29,11 +29,11 @@ activate :dir_manager
 activate :directory_indexes
 
 
-require 'lib/current_link.rb'
-activate :current_link
+require 'lib/current_link_indicator.rb'
+activate :current_link_indicator
 
-require 'lib/breadcrumbs.rb'
-activate :breadcrumbs
+require 'lib/breadcrumbs_presenter.rb'
+activate :breadcrumbs_presenter
 
 # Build-specific configuration
 configure :build do

@@ -1,6 +1,6 @@
 # Adds a method which checks whether link is active or not
 # @note is used in main menu for example
-class CurrentLink < Middleman::Extension
+class CurrentLinkIndicator < Middleman::Extension
   def initialize(app, options_hash={}, &block)
     super
   end
@@ -19,4 +19,4 @@ class CurrentLink < Middleman::Extension
 
 end
 
-::Middleman::Extensions.register(:current_link, CurrentLink)
+::Middleman::Extensions.register(:current_link_indicator, CurrentLinkIndicator)

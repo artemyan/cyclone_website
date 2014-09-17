@@ -1,5 +1,5 @@
 # Adds a method which adds breadcrumbs to a view
-class Breadcrumbs < Middleman::Extension
+class BreadcrumbsPresenter < Middleman::Extension
 
   def initialize(app, options_hash={}, &block)
     super
@@ -29,4 +29,4 @@ class Breadcrumbs < Middleman::Extension
   end
 end
 
-::Middleman::Extensions.register(:breadcrumbs, Breadcrumbs)
+::Middleman::Extensions.register(:breadcrumbs_presenter, BreadcrumbsPresenter)

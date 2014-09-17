@@ -1,9 +1,11 @@
-- content_for :banner do
-  = partial "shared/banner", locals: {banner: 'contacts'}
-= partial "shared/banner", locals: {banner: 'contacts'}
 ---
 title: Контакты
 ---
+
+- content_for :banner do
+  = partial "shared/banner", locals: {banner: 'contacts'}
+= partial "shared/banner", locals: {banner: 'contacts'}
+
 - content_for :sidebar_menu do
   = partial "shared/sidebar"
 

@@ -1,0 +1,4 @@
+# Contains info contacts link
+# @note is used in shared/sidebar partial
+- id: contacts
+  title: Контакты
