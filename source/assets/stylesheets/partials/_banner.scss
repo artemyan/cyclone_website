@@ -1,12 +1,20 @@
+@import "banners/*.png";
+
 .banner{
   width: 1096px;
   height: 130px;
   display: block;
-  background-image: url(/assets/images/banners.png);
+//  background-image: url(image-path('banners.png'));
   background-repeat: no-repeat;
 
 //  default background image?
   &.banner--company{
-    background-position: 0 -130px;
+//    background-position: 0 -130px;
+    @include banners-sprite(company);
   }
 }
+
+
+//
+
+//
