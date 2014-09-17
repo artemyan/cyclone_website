@@ -29,7 +29,8 @@ html
           .small = '(812)'
           .big 648-02-50
           .link = link_to 'все контакты'
-
+      - if content_for?(:banner)
+        == yield_content :banner
 
 
     / в этом блоке определяем сколько нужно колонок в шаблоне
