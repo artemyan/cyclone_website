@@ -1,0 +1,11 @@
+// Error page
+.error-page{
+  padding: 175px 0 0;
+}
+
+  .error-page__title{
+    background: image-url("errors/guy.png") top right no-repeat,
+                image-url("errors/paper-bg.png") 0 18px repeat-x;
+    padding: 50px 300px 0 0;
+    min-height: 500px;
+  }

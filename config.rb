@@ -31,9 +31,10 @@ activate :directory_indexes
 
 require 'lib/current_link_indicator.rb'
 activate :current_link_indicator
-
 require 'lib/breadcrumbs_presenter.rb'
 activate :breadcrumbs_presenter
+
+page "/404.html", layout: "empty"
 
 # Build-specific configuration
 configure :build do
@@ -51,6 +52,4 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
 end
-

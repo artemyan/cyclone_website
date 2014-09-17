@@ -1,1 +1,8 @@
-404!
+.error-page.error-page--404
+  .error-page__return-link
+    = link_to "/", class: '' do
+      span.fa.fa-arrow-left
+      span Вернуться на главную
+  .error-page__title
+    h1
+      | Страница не найдена.
