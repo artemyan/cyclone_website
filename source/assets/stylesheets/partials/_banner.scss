@@ -4,17 +4,13 @@
   width: 1096px;
   height: 130px;
   display: block;
-//  background-image: url(image-path('banners.png'));
   background-repeat: no-repeat;
-
-//  default background image?
-  &.banner--company{
-//    background-position: 0 -130px;
-    @include banners-sprite(company);
-  }
 }
 
+$pages: ('company', 'contacts');
 
-//
-
-//
+@each $page in $pages {
+  .banner--#{$page}{
+    @include banners-sprite(#{$page});
+  }
+}

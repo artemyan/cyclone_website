@@ -1,7 +1,9 @@
----
-head_title: Контакты
----
+= partial "shared/banner", locals: {banner: 'contacts'}
 
-= partial "shared/sidebar"
+h2 Контакты
 
-| Контакты!
+div
+  spanСтроительная компания ООО «ЦИКЛОН» &#010; &#013;
+  br    197110, Россия, Санкт-Петербург, Левашовский пр., 12, лит. А, Офис 615
+  span      Тел.: +7 (812) 648-02-50
+  br Электронная почта: #{link_to('info@ziklon.ru','mailto:info@ziklon.ru')}
