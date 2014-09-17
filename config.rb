@@ -32,7 +32,8 @@ activate :directory_indexes
 require 'lib/current_link.rb'
 activate :current_link
 
-# activate :breadcrumbs
+require 'lib/breadcrumbs.rb'
+activate :breadcrumbs
 
 # Build-specific configuration
 configure :build do

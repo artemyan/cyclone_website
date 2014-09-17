@@ -1,4 +1,5 @@
 ul.sidebar-menu--main
   - data.main_menu_links.each do |link|
-    - unless link.nested
-      = current_link_to(link.title, link.id)
+    li
+      - unless link.nested
+        = current_link_to(link.title, link.id)
