@@ -1,0 +1,617 @@
+@font-face {
+  font-family: 'HighwaySansProBold';
+  src: url("/assets/fonts/highwaysanspro-bold/highwaysanspro-bold.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/highwaysanspro-bold/highwaysanspro-bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/highwaysanspro-bold/highwaysanspro-bold.woff") format("woff"), url("/assets/fonts/highwaysanspro-bold/highwaysanspro-bold.ttf") format("truetype"), url("/assets/fonts/highwaysanspro-bold/highwaysanspro-bold.svg#2c41edb32fecaa28a543096885f58f94") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: 'HighwaySansProMedium';
+  src: url("/assets/fonts/highwaysanspro-medium/highwaysanspro-medium.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/highwaysanspro-medium/highwaysanspro-medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/highwaysanspro-medium/highwaysanspro-medium.woff") format("woff"), url("/assets/fonts/highwaysanspro-medium/highwaysanspro-medium.ttf") format("truetype"), url("/assets/fonts/highwaysanspro-medium/highwaysanspro-medium.svg#258ec4218490b51159ae14dd7b0f3367") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'HighwaySansProRegular';
+  src: url("/assets/fonts/highwaysanspro-regular/highwaysanspro-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/highwaysanspro-regular/highwaysanspro-regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/highwaysanspro-regular/highwaysanspro-regular.woff") format("woff"), url("/assets/fonts/highwaysanspro-regular/highwaysanspro-regular.ttf") format("truetype"), url("/assets/fonts/highwaysanspro-regular/highwaysanspro-regular.svg#a334a373ca7c9e7fe5cdd11b1fa261bd") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'HighwaySansProThin';
+  src: url("/assets/fonts/highwaysanspro-thin/highwaysanspro-thin.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/highwaysanspro-thin/highwaysanspro-thin.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/highwaysanspro-thin/highwaysanspro-thin.woff") format("woff"), url("/assets/fonts/highwaysanspro-thin/highwaysanspro-thin.ttf") format("truetype"), url("/assets/fonts/highwaysanspro-thin/highwaysanspro-thin.svg#5632f2dfe494fd8cc1f302d0ef9ba4d4") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 100; }
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_grid.scss */
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 16.66667px 50px; }
+
+/* line 10, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_grid.scss */
+.cols {
+  padding: 0 80px; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_defaults.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 5, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_defaults.scss */
+html, body {
+  font-family: "HighwaySansProRegular";
+  font-size: 16px;
+  color: #666; }
+
+/* line 11, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_defaults.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+p,
+a {
+  white-space: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+
+/* line 24, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_defaults.scss */
+ul,
+ol {
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_typographic.scss */
+h1, .h1 {
+  font-family: "HighwaySansProThin";
+  color: #4b5348;
+  font-size: 34px;
+  line-height: 1.3; }
+
+/* line 8, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_typographic.scss */
+h2, .h2 {
+  font-family: "HighwaySansProMedium";
+  font-size: 32px;
+  color: #ec685c;
+  line-height: 1.3;
+  padding-bottom: 0.7em; }
+
+/* line 18, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_typographic.scss */
+h4, .h4 {
+  color: #1a7565;
+  font-family: "HighwaySansProBold";
+  font-size: 16px;
+  padding-bottom: 0.5em; }
+
+/* line 25, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_typographic.scss */
+h5, .h5 {
+  color: #666;
+  font-size: 16px;
+  padding-bottom: 0.1em; }
+
+/* line 34, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_typographic.scss */
+p {
+  font-family: "HighwaySansProRegular";
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  padding-bottom: 2em; }
+
+/* line 42, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_typographic.scss */
+p.small {
+  font-size: 11.2px; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_texts.scss */
+.text-green, header .contacts .phone .small, .header .contacts .phone .small {
+  color: #2fb546; }
+
+/* line 2, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_texts.scss */
+.text-red {
+  color: #e63d4d; }
+
+/* line 3, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_texts.scss */
+.text-gray {
+  color: #4b5348; }
+
+/* line 4, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_texts.scss */
+.text-important, header .contacts .phone a, .header .contacts .phone a {
+  text-transform: uppercase; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_links.scss */
+.link {
+  display: inline-block;
+  border-bottom: 1px solid;
+  border-color: inherit; }
+  /* line 5, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_links.scss */
+  .link, .link:hover, .link:visited, .link:active {
+    text-decoration: none; }
+
+/* line 8, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_links.scss */
+a {
+  display: inline;
+  border-bottom: 1px solid;
+  line-height: 1.3; }
+  /* line 7, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+  a, a:visited {
+    border-color: #3498db;
+    color: #3498db; }
+  /* line 12, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+  a, a:hover, a:visited, a:active {
+    text-decoration: none; }
+  /* line 14, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+  a:hover, a:active {
+    border-color: #217dbb;
+    color: #217dbb; }
+
+/* line 9, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_links.scss */
+.link-red {
+  display: inline;
+  border-bottom: 1px solid;
+  line-height: 1.3; }
+  /* line 7, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+  .link-red, .link-red:visited {
+    border-color: #e63d4d;
+    color: #e63d4d; }
+  /* line 12, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+  .link-red, .link-red:hover, .link-red:visited, .link-red:active {
+    text-decoration: none; }
+  /* line 14, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+  .link-red:hover, .link-red:active {
+    border-color: #d51b2d;
+    color: #d51b2d; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_lightbox.scss */
+.lightbox {
+  position: fixed;
+  background: rgba(6, 6, 6, 0.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  /* line 8, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_lightbox.scss */
+  .lightbox > img {
+    display: block;
+    margin: 15px auto;
+    height: 95%;
+    width: auto; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_content.scss */
+.content {
+  color: #909090; }
+  /* line 4, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_content.scss */
+  .content img {
+    max-width: 100%;
+    padding-bottom: 2em; }
+  /* line 9, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_content.scss */
+  .content ul, .content ol {
+    margin: -2em 0 2em 1em; }
+    /* line 11, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_content.scss */
+    .content ul li, .content ol li {
+      line-height: 1.5; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+header, .header {
+  margin: 0 80px 30px; }
+  /* line 4, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+  header .menu, .header .menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "HighwaySansProBold";
+    font-size: 12px;
+    margin-top: 0.5em;
+    text-align: right;
+    padding-right: 3em;
+    text-transform: uppercase; }
+    /* line 22, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+    header .menu:before, header .menu:after, .header .menu:before, .header .menu:after {
+      content: " ";
+      /* 1 */
+      display: table;
+      /* 2 */ }
+    /* line 27, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+    header .menu:after, .header .menu:after {
+      clear: both; }
+    /* line 49, /Users/justvitalius/.rvm/gems/ruby-2.1.2@ziklon/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_inline-block-list.scss */
+    header .menu li, .header .menu li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      white-space: nowrap; }
+    /* line 13, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+    header .menu li, .header .menu li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      white-space: nowrap;
+      padding-left: 10px;
+      padding-right: 10px; }
+    /* line 14, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+    header .menu li a, .header .menu li a {
+      display: inline;
+      border-bottom: 1px solid;
+      line-height: 1.3;
+      line-height: 1.1; }
+      /* line 7, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+      header .menu li a, header .menu li a:visited, .header .menu li a, .header .menu li a:visited {
+        border-color: #e63d4d;
+        color: #e63d4d; }
+      /* line 12, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+      header .menu li a, header .menu li a:hover, header .menu li a:visited, header .menu li a:active, .header .menu li a, .header .menu li a:hover, .header .menu li a:visited, .header .menu li a:active {
+        text-decoration: none; }
+      /* line 14, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+      header .menu li a:hover, header .menu li a:active, .header .menu li a:hover, .header .menu li a:active {
+        border-color: #d51b2d;
+        color: #d51b2d; }
+    /* line 16, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+    header .menu .selected, .header .menu .selected {
+      color: #323e30;
+      border-color: transparent; }
+    /* line 20, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+    header .menu #contacts, .header .menu #contacts {
+      display: none; }
+  /* line 25, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+  header .logo, header .logo:hover, header .logo:active, header .logo:visited, header .logo a, header .logo a:hover, header .logo a:active, header .logo a:visited, .header .logo, .header .logo:hover, .header .logo:active, .header .logo:visited, .header .logo a, .header .logo a:hover, .header .logo a:active, .header .logo a:visited {
+    text-decoration: none;
+    border-bottom: none; }
+  /* line 30, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+  header .contacts .phone, .header .contacts .phone {
+    letter-spacing: -1.5;
+    text-align: right; }
+    /* line 34, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+    header .contacts .phone .small, header .contacts .phone .big, .header .contacts .phone .small, .header .contacts .phone .big {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      white-space: nowrap;
+      padding-left: 0;
+      padding-right: 0; }
+    /* line 35, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+    header .contacts .phone .small, .header .contacts .phone .small {
+      font-family: "HighwaySansProRegular";
+      font-size: 16px; }
+    /* line 41, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+    header .contacts .phone .big, .header .contacts .phone .big {
+      padding-left: .3em;
+      color: #323e30;
+      font-family: "HighwaySansProMedium";
+      font-size: 24px; }
+    /* line 48, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+    header .contacts .phone .link, .header .contacts .phone .link {
+      display: block;
+      border: none; }
+    /* line 50, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_header.scss */
+    header .contacts .phone a, .header .contacts .phone a {
+      display: inline;
+      border-bottom: 1px solid;
+      line-height: 1.3;
+      font-family: "HighwaySansProBold";
+      font-size: 12px;
+      letter-spacing: 0; }
+      /* line 7, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+      header .contacts .phone a, header .contacts .phone a:visited, .header .contacts .phone a, .header .contacts .phone a:visited {
+        border-color: #2fb546;
+        color: #2fb546; }
+      /* line 12, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+      header .contacts .phone a, header .contacts .phone a:hover, header .contacts .phone a:visited, header .contacts .phone a:active, .header .contacts .phone a, .header .contacts .phone a:hover, .header .contacts .phone a:visited, .header .contacts .phone a:active {
+        text-decoration: none; }
+      /* line 14, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+      header .contacts .phone a:hover, header .contacts .phone a:active, .header .contacts .phone a:hover, .header .contacts .phone a:active {
+        border-color: #248d36;
+        color: #248d36; }
+
+/* line 56, banners/*.png */
+.banners-sprite, .banner--company, .banner--contacts {
+  background-image: url("/assets/images/banners-s8a3d6f444f.png");
+  background-repeat: no-repeat; }
+
+/* line 3, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_banner.scss */
+.banner {
+  width: 1096px;
+  height: 130px;
+  display: block;
+  background-repeat: no-repeat; }
+
+/* line 13, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_banner.scss */
+.banner--company {
+  background-position: 0 0; }
+
+/* line 13, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_banner.scss */
+.banner--contacts {
+  background-position: 0 -130px; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_straps.scss */
+.strap {
+  min-height: 136px;
+  height: 136px;
+  width: 100%;
+  display: table;
+  position: relative;
+  margin-bottom: 30px; }
+  /* line 9, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_straps.scss */
+  .strap:empty {
+    height: 0;
+    margin-bottom: 166px; }
+  /* line 10, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_straps.scss */
+  .strap.empty {
+    height: 100px;
+    min-height: 100px; }
+  /* line 12, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_straps.scss */
+  .strap h3, .strap h4 {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "HighwaySansProThin";
+    padding: 0 80px; }
+  /* line 19, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_straps.scss */
+  .strap h3 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 1.1;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5); }
+  /* line 27, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_straps.scss */
+  .strap h4 {
+    font-size: 32px;
+    color: #6D6D6D; }
+  /* line 29, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_straps.scss */
+  .strap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_licenses.scss */
+.license {
+  padding-right: 20px;
+  margin-bottom: 10px; }
+  /* line 22, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+  .license:before, .license:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  /* line 27, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+  .license:after {
+    clear: both; }
+  /* line 8, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_licenses.scss */
+  .license .license-preview {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: inherit;
+    width: 100px;
+    display: block;
+    float: left;
+    border-bottom: none; }
+    /* line 6, /Users/justvitalius/.rvm/gems/ruby-2.1.2@ziklon/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_unstyled-link.scss */
+    .license .license-preview:active, .license .license-preview:focus {
+      outline: none; }
+    /* line 14, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_licenses.scss */
+    .license .license-preview img {
+      max-width: 100px;
+      height: auto;
+      border: 2px solid #f0f0f0;
+      padding-bottom: 0; }
+  /* line 22, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_licenses.scss */
+  .license h4, .license h5, .license p {
+    padding-left: 110px; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_sidebar_menu.scss */
+.sidebar-menu {
+  list-style: none;
+  font-family: "HighwaySansProMedium";
+  font-size: 13px;
+  text-transform: uppercase;
+  width: 90%; }
+  /* line 11, /Users/justvitalius/.rvm/gems/ruby-2.1.2@ziklon/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_bullets.scss */
+  .sidebar-menu li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0; }
+  /* line 10, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_sidebar_menu.scss */
+  .sidebar-menu li {
+    padding-bottom: 1em; }
+    /* line 12, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_sidebar_menu.scss */
+    .sidebar-menu li a {
+      display: inline;
+      border-bottom: 1px solid;
+      line-height: 1.3; }
+      /* line 7, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+      .sidebar-menu li a, .sidebar-menu li a:visited {
+        border-color: #666;
+        color: #666; }
+      /* line 12, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+      .sidebar-menu li a, .sidebar-menu li a:hover, .sidebar-menu li a:visited, .sidebar-menu li a:active {
+        text-decoration: none; }
+      /* line 14, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+      .sidebar-menu li a:hover, .sidebar-menu li a:active {
+        border-color: #e63d4d;
+        color: #e63d4d; }
+  /* line 18, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_sidebar_menu.scss */
+  .sidebar-menu li.selected:before {
+    content: '>';
+    display: inline-block;
+    padding-right: 2px; }
+  /* line 27, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_sidebar_menu.scss */
+  .sidebar-menu li.selected, .sidebar-menu li.selected a.selected {
+    color: #e63d4d;
+    border-color: transparent; }
+
+/* line 3, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_country_map.scss */
+.country-map {
+  position: relative; }
+  /* line 5, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_country_map.scss */
+  .country-map .country-map-pointer {
+    background-image: url("/assets/images/map-pointer.png");
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 32px;
+    margin-left: -12px;
+    margin-top: -30px;
+    left: 0;
+    top: 0; }
+    /* line 15, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_country_map.scss */
+    .country-map .country-map-pointer, .country-map .country-map-pointer:hover, .country-map .country-map-pointer:visited, .country-map .country-map-pointer:active {
+      text-decoration: none;
+      border: none; }
+
+/* line 19, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_country_map.scss */
+.country-map-popup {
+  background-color: #26c784;
+  padding: 12px 12px 32px;
+  border-radius: 8px;
+  width: 238px;
+  position: absolute;
+  box-shadow: 1px 17px 10px -10px rgba(0, 0, 0, 0.4); }
+  /* line 29, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_country_map.scss */
+  .country-map-popup h5, .country-map-popup h5 a, .country-map-popup h5 a:hover, .country-map-popup h5 a:active, .country-map-popup h5 a:visited {
+    font-family: "HighwaySansProMedium";
+    font-size: 18px;
+    line-height: 1.1;
+    color: #000;
+    display: block;
+    padding-bottom: .7em; }
+  /* line 39, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_country_map.scss */
+  .country-map-popup a {
+    display: inline;
+    border-bottom: 1px solid;
+    line-height: 1.3;
+    display: inline;
+    font-family: "HighwaySansProRegular";
+    font-size: 14px;
+    line-height: 1.4; }
+    /* line 7, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+    .country-map-popup a, .country-map-popup a:visited {
+      border-color: #fff;
+      color: #fff; }
+    /* line 12, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+    .country-map-popup a, .country-map-popup a:hover, .country-map-popup a:visited, .country-map-popup a:active {
+      text-decoration: none; }
+    /* line 14, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mixins.scss */
+    .country-map-popup a:hover, .country-map-popup a:active {
+      border-color: #fff;
+      color: #fff; }
+  /* line 47, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_country_map.scss */
+  .country-map-popup p {
+    padding-bottom: .7em; }
+  /* line 51, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_country_map.scss */
+  .country-map-popup:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #26c784;
+    border-width: 10px;
+    margin-left: -10px; }
+  /* line 55, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_country_map.scss */
+  .country-map-popup .close {
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+
+/* line 1, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_others.scss */
+#main {
+  margin-left: -50px;
+  position: relative;
+  width: 1200px; }
+  /* line 6, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_others.scss */
+  #main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
+/* line 13, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_others.scss */
+.invisible {
+  opacity: 0;
+  transform: translateY(-10px);
+  -webkit-transition: transform 0.1s ease-in-out;
+  -moz-transition: transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  z-index: -1; }
+
+/* line 24, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_others.scss */
+.visible {
+  opacity: 0.99;
+  transform: translateY(0px);
+  -webkit-transition: transform 0.1s ease-in-out;
+  -moz-transition: transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  z-index: 2; }
+
+/* line 6, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
+.col {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  padding-left: 0;
+  padding-right: 0;
+  vertical-align: top;
+  white-space: normal; }
+  /* line 13, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
+  .col.m-header-logo {
+    width: 36.9%; }
+  /* line 16, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
+  .col.m-header-menu {
+    width: 42.9%; }
+  /* line 20, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
+  .col.m-header-contacts {
+    width: 19.9%; }
+  /* line 25, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
+  .col.m-sidebar {
+    width: 30.9%;
+    margin-top: 93px; }
+  /* line 31, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
+  .col.m-main-content {
+    width: 68.9%; }
+  /* line 36, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
+  .col.m-license {
+    width: 49.9%; }
+
+/* line 2, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_error-page.css.scss */
+.error-page {
+  padding: 175px 0 0; }
+
+/* line 6, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_error-page.css.scss */
+.error-page__title {
+  background: url("/assets/images/errors/guy.png") top right no-repeat, url("/assets/images/errors/paper-bg.png") 0 18px repeat-x;
+  padding: 50px 300px 0 0;
+  min-height: 500px; }
