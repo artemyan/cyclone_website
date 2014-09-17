@@ -6,9 +6,11 @@
   margin-bottom: 10px;
 
   .license-preview{
+    @include unstyled-link;
     width: $preview-width;
     display: block;
     float: left;
+    border-bottom: none;
     img{
       max-width: $preview-width;
       height: auto;

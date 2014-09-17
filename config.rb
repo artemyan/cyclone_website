@@ -16,8 +16,10 @@ set :layouts_dir, "layouts"
 
 require 'lib/category_presenter'
 require 'lib/facility_presenter'
+require 'lib/license_presenter'
 activate :category_presenter
 activate :facility_presenter
+activate :license_presenter
 
 
 require 'lib/dir_manager.rb'
@@ -40,7 +42,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  activate :relative_assets
+  # activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

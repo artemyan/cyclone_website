@@ -1,1 +1,8 @@
-| Лицензии!
+h2 Лицензии
+- licenses.each do |license|
+  .col.col-license
+    .license
+      = link_to license_preview_path(license, :big), class: 'license-preview', target: '_blank' do
+        = image_tag license_preview_path license
+      h4 = license.title
+      p = license.description
