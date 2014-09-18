@@ -7,3 +7,9 @@ title:  Программно-технические решения
 | Программно-технические решения!
 
 = partial "shared/breadcrumbs"
+
+
+h2 Реализованные проекты
+div
+  - facilities_by_category(:programmes).each do |facility|
+    = partial 'facilities/facility', locals: { facility: facility }

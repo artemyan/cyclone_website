@@ -7,3 +7,9 @@ title: Высокотехнологические решения
 | Создание высокотехнологических решений!
 
 = partial "shared/breadcrumbs"
+
+
+h2 Реализованные проекты
+div
+  - facilities_by_category(:hitech).each do |facility|
+    = partial 'facilities/facility', locals: { facility: facility }
