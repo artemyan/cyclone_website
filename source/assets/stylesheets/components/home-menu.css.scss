@@ -1,0 +1,18 @@
+$el: '.home-menu';
+
+#{$el}{
+  margin-left: -$gutter;
+  position: relative;
+  width: 1200px;
+  min-height: 660px;
+}
+
+#{$el}__bg{
+  position: absolute;
+  top: 0;
+  width: 2600px;
+  margin-left: -700px;
+  height: 100%;
+  z-index: -1;
+  background: image-url('home-bg.jpg');
+}
