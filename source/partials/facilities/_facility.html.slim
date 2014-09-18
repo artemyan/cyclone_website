@@ -1,7 +1,7 @@
 article.facility
   = facility_image facility, class: 'vit-class facility__image'
   - if facility.id.present?
-    = link_to facility.title, facility_object_path(facility.id), class: "facility__title"
+    = link_to facility.title, facility_path(facility.id), class: "facility__title"
   - else
     h3.facility__title--no-link
        = facility.title

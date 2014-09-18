@@ -15,7 +15,7 @@ class FacilityPresenter < Middleman::Extension
 
     def facility_path(id)
       facility = facilities_find id
-      "#{facility.category_id}/#{facility.id}" if facility
+      "/#{facility.category_id}/#{facility.id}" if facility
     end
 
 
@@ -41,15 +41,6 @@ class FacilityPresenter < Middleman::Extension
       if facility && facility.preview
         image_tag image_path("facilities/#{facility.preview}"), *args
       end
-    end
-
-    # Creates correct paths to facilities
-    # @param facility_id [String]
-    # @note is used in _facility partial on facilities pages
-    # @example
-    #   link_to facility.title, facility_object_path(facility.id)
-    def facility_object_path(facility_id)
-      "#{current_path.split("/").first}/#{facility_id}"
     end
 
   end
