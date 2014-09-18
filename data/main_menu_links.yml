@@ -1,6 +1,5 @@
 # Contains info about menu links
 # @note is used in shared/menu partial
-# @note facilities must be last here or FacilityPresenter should be changed
 - id: company
   title: Компания
 

@@ -1,24 +1,7 @@
 header, .header{
   margin: 0 $strap-gutter 30px;
 
-  .menu{
-    @include inline-block-list;
-    font-family: $font-family-bold;
-    font-size: $font-size-header-menu;
-    margin-top: $offset-header-menu-top;
-    text-align: right;
-    padding-right: 3em;
-    text-transform: uppercase;
 
-    li { @include inline-block-list-item(10px); }
-    li a { @include link($color-red); line-height: 1.1; }
-
-    .selected{ color: $color-gray-d; border-color: transparent; }
-
-    // Скрываем последний пункт меню.
-    // Известно, что это «контакты» и по дизайну этот пункт должен быть скрыт
-    #contacts{ display: none; }
-  }
 
   .logo{
     &, a{

@@ -1,12 +1,13 @@
 ul.menu.menu--main
-  - main_menu_links.each do |link|
+  - data.main_menu_links.each do |link|
     li
       - if link.nested
-        span
-          = link.title
-        ul.menu__nested
-          - categories.each do |category_link|
-            li
-              = current_link_to(category_link.title, category_link.id)
+        li.nested_link
+          a.nested_link
+            = link.title
+          ul.menu.menu__nested
+            - categories.each do |category_link|
+              li
+                = current_link_to(content_tag(:span, category_link.title), category_link.id)
       - else
-        = current_link_to(link.title, link.id)
+        = current_link_to(content_tag(:span, link.title), link.id)
