@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     if (menu_container !== null) {
 
-      var paper = Raphael("main", 1200, 733);
+      var paper = Raphael("main", 1200, 660);
       var btn_width = 367,
           btn_height = 319,
           btn_offset = 185,
@@ -151,11 +151,11 @@ $(document).ready(function () {
       var center_img = paper.image("/assets/images/home-menu-sprites/map.png", padding_left + btn_width + 15, 10, 369, 639).attr(img_attrs);
 
 
-      var left_top_img_hover = paper.image("/home-menu-sprites/engineering_hover.png", padding_left, 0, 554, 320).attr(img_attrs).hide();
-      var left_bottom_img_hover = paper.image("/home-menu-sprites/tech_service_hover.png", padding_left, btns_top_offset, 554, 320).attr(img_attrs).hide();
-      var right_top_img_hover = paper.image("/home-menu-sprites/soft_hover.png", padding_left * 2 + btn_offset + btn_width + 3, 0, 554, 320).attr(img_attrs).hide();
-      var right_bottom_img_hover = paper.image("/home-menu-sprites/medicine_hover.png", padding_left * 2 + btn_offset + btn_width + 3, btns_top_offset, 554, 320).attr(img_attrs).hide();
-      var center_img_hover = paper.image("/home-menu-sprites/map_hover.png", padding_left + btn_width + 15, 10, 369, 639).attr(img_attrs).hide();
+      var left_top_img_hover = paper.image("/assets/images/home-menu-sprites/engineering_hover.png", padding_left, 0, 554, 320).attr(img_attrs).hide();
+      var left_bottom_img_hover = paper.image("/assets/images/home-menu-sprites/tech_service_hover.png", padding_left, btns_top_offset, 554, 320).attr(img_attrs).hide();
+      var right_top_img_hover = paper.image("/assets/images/home-menu-sprites/soft_hover.png", padding_left * 2 + btn_offset + btn_width + 3, 0, 554, 320).attr(img_attrs).hide();
+      var right_bottom_img_hover = paper.image("/assets/images/home-menu-sprites/medicine_hover.png", padding_left * 2 + btn_offset + btn_width + 3, btns_top_offset, 554, 320).attr(img_attrs).hide();
+      var center_img_hover = paper.image("/assets/images/home-menu-sprites/map_hover.png", padding_left + btn_width + 15, 10, 369, 639).attr(img_attrs).hide();
 
       //    var left_top_txt = paper.text(180, 150, "ИНЖЕНЕРНЫЕ\nСИСТЕМЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
       //    var left_bottom_txt = paper.text(180, 500, "ЭКСПЛУАТАЦИЯ\nИ ТО ОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'start' });
@@ -163,11 +163,11 @@ $(document).ready(function () {
       //    var right_bottom_txt = paper.text(780, 500, "ОБЪЕКТЫ\nМЕДИЦИНЫ").attr(text_attrs).attr({ 'text-anchor': 'start' });
       //    var center_txt = paper.text(600, 320, "КАРТА\nОБЪЕКТОВ").attr(text_attrs).attr({ 'text-anchor': 'middle' });
 
-      var left_top_path = paper.path(left_top_coords).attr(path_attrs).attr({title: 'Инженерные системы', href: '/facilities/engineering_systems'});
-      var left_bottom_path = paper.path(left_bottom_coords).attr(path_attrs).attr({title: 'Эксплуатация и ТО объектов', href: '/facilities/ekspluatacia_to_objectov'});
-      var right_top_path = paper.path(right_top_coords).attr(path_attrs).attr({title: 'Программно-технические комплексы', href: '/facilities/programmno_tehnicheskie_kompleksi'});
-      var right_bottom_path = paper.path(right_bottom_coords).attr(path_attrs).attr({title: 'Объекты медицины', href: '/facilities/objecti_mediciny'});
-      var center_path = paper.path(center_coords).attr(path_attrs).attr({title: 'Карта объектов', href: '/facilities'});
+      var left_top_path = paper.path(left_top_coords).attr(path_attrs).attr({title: 'Инженерные системы', href: '/engineering'});
+      var left_bottom_path = paper.path(left_bottom_coords).attr(path_attrs).attr({title: 'Эксплуатация и обслуживание объектов и комплексов', href: '/exploitation'});
+      var right_top_path = paper.path(right_top_coords).attr(path_attrs).attr({title: 'Программно-технические решения', href: '/programmes'});
+      var right_bottom_path = paper.path(right_bottom_coords).attr(path_attrs).attr({title: 'Создание высокотехнологических сооружений', href: '/hitech'});
+      var center_path = paper.path(center_coords).attr(path_attrs).attr({title: 'Карта объектов', href: '/map'});
 
 
       function default_btn_styles(item) {
