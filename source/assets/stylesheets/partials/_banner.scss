@@ -3,11 +3,23 @@
 .banner{
   width: 1096px;
   height: 130px;
-  display: block;
-  background-repeat: no-repeat;
+  display: table;
+  min-height: 136px;
+  position: relative;
+  margin: 30px auto;
+  .banner__title {
+    text-align: center;
+    font-size: 42px;
+    line-height: 1.1;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+    display: table-cell;
+    padding: 0 60px;
+  }
 }
 
-$pages: ('company', 'contacts');
+$pages: ('company', 'contacts', 'engineering', 'eook', 'licence', 'map', 'medic', 'ptr');
 
 @each $page in $pages {
   .banner--#{$page}{

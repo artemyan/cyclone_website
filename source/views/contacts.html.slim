@@ -2,8 +2,7 @@
 title: Контакты
 ---
 
-- content_for :banner do
-  = partial "shared/banner", locals: {banner: 'contacts'}
+- render_banner 'contacts', 'Контакты компании'
 
 - content_for :sidebar_menu do
   = partial "shared/sidebar"
