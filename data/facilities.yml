@@ -136,7 +136,7 @@
 
 - id: zashitnie_soorygenia_na_plotine
   city_id: spb
-  category_id: hitech
+  category_id: hitech_industrial
   title: Системы автоматизированного контроля за эксплуатацией
 
 - id: spb_nauchno_issledovatelskii_institut_ftiziopulmonologii
