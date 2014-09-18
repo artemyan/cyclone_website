@@ -15,7 +15,15 @@ class BreadcrumbsPresenter < Middleman::Extension
       hierarchy.unshift hierarchy.first.parent while hierarchy.first.parent
       hierarchy.collect do |hierarchy_page|
         # Use ordinary title if not detailed otherwise
-        title = hierarchy_page.data.breadcrumb_title.present? ? hierarchy_page.data.breadcrumb_title : hierarchy_page.data.title
+        title = if hierarchy_page.data.breadcrumb_title.present?
+          hierarchy_page.data.breadcrumb_title
+        elsif hierarchy_page.data.title.present?
+          hierarchy_page.data.title
+        else
+          # @example
+          #   "kzs_spb"
+          request.path.split("/").pop(2).first
+        end
         # For last page show only a title
         if hierarchy_page == hierarchy.last
           content_tag(:span) do
