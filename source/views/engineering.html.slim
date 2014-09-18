@@ -14,4 +14,6 @@ p
 
 
 h2 Реализованные проекты
-= facilities_by_category(:engineering).inspect
+div
+  - facilities_by_category(:engineering).each do |facility|
+    = partial 'facilities/facility', locals: { facility: facility }

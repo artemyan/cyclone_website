@@ -1,0 +1,6 @@
+= facility_image facility, class: 'vit-class'
+- if facility.id.empty?
+  = link_to facility.title, facility.id
+- else
+  h3 = facility.title
+p = facility.description

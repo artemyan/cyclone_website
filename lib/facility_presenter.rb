@@ -37,6 +37,12 @@ class FacilityPresenter < Middleman::Extension
       current_path.split('/')[1]
     end
 
+    def facility_image(facility, *args)
+      if facility && facility.preview
+        image_tag image_path("facilities/#{facility.preview}"), *args
+      end
+    end
+
   end
 end
 
