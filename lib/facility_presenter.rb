@@ -23,12 +23,18 @@ class FacilityPresenter < Middleman::Extension
       facilities.group_by { |x| x.city_id }
     end
 
+
     def facilities_by_category(_category_id=nil)
       _facilities = facilities.group_by { |x| x.category_id }
       if _category_id.to_s.present?
         _facilities = _facilities[_category_id.to_s]
       end
       _facilities
+    end
+
+
+    def facility_id_by_url
+      current_path.split('/')[1]
     end
 
   end
