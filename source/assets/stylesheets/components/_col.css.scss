@@ -4,6 +4,8 @@
 $el: '.col';
 
 #{$el}{
+  $contacts-width: 200px;
+
   @include inline-block-list-item(0);
   vertical-align: top;
   white-space: normal;
@@ -11,25 +13,31 @@ $el: '.col';
 
   // шапка сайта
   &.m-header-logo {
-    width: 16.9%;
-  }
-  &.m-header-menu {
-    width: 62.9%;
+    width: $sidebar-width;
   }
 
-  &.m-header-contacts {
-    width: 19.9%;
+  &.m-header-menu {
+    width: $container-width - 2*$gutter - $contacts-width - $sidebar-width;
+  }
+
+  &.m-header-contacts{
+    width: $contacts-width;
+  }
+
+  &.m-header-contacts, &.m-header-menu {
+    margin-top: 15px;
   }
 
   // ширина левого сайдбара в двуколоночной верстке
   &.m-sidebar {
-    width: 30.9%;
+    width: $sidebar-width;
+    padding-left: $strap-gutter;
     margin-top: 93px;
   }
 
   // основной контент в двуколоночной верстке
   &.m-main-content {
-    width: 68.9%;
+    width: $container-width - $sidebar-width - 2*$gutter;
   }
 
   // колонка одной лицензии в списке лицензии
