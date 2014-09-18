@@ -1,6 +1,9 @@
-= facility_image facility, class: 'vit-class'
-- if facility.id.empty?
-  = link_to facility.title, facility.id
-- else
-  h3 = facility.title
-p = facility.description
+article.facility
+  = facility_image facility, class: 'vit-class facility__image'
+  - if facility.id.empty?
+    = link_to facility.title, facility.id, class: "facility__title"
+  - else
+    h3.facility__title--no-link
+       = facility.title
+  p.facility__description
+    = facility.description

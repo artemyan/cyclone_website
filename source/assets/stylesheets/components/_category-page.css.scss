@@ -1,0 +1,38 @@
+// Styles for category pages
+// @example
+//   on /engineering page
+
+.category-page{
+
+}
+
+  .category-page__title{
+    font-family: $font-family-medium;
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 30px 0 20px;
+    color: $color-red-l;
+  }
+
+  .category-page__subtitle{
+    font-size: 20px;
+    color: $color-green;
+    font-family: $font-family-medium;
+  }
+
+  .category-page__text{
+
+  }
+
+
+  .category-page__facilities{
+
+  }
+
+    .category-page__facilities__title{
+
+    }
+
+    .category-page__facilities__list{
+
+    }
