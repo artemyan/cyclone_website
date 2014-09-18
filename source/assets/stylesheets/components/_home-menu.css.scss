@@ -10,9 +10,7 @@ $el: '.home-menu';
 #{$el}__bg{
   position: absolute;
   top: 0;
-  width: 2600px;
-  margin-left: -700px;
   height: 100%;
   z-index: -1;
-  background: image-url('home-bg.jpg');
+  background: image-url('home-bg.jpg') no-repeat top center;
 }

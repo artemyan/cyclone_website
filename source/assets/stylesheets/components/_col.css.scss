@@ -31,7 +31,7 @@ $el: '.col';
   // ширина левого сайдбара в двуколоночной верстке
   &.m-sidebar {
     width: $sidebar-width;
-    padding-left: $strap-gutter;
+    padding-right: 40px;
     margin-top: 93px;
   }
 
