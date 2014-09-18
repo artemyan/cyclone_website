@@ -2,6 +2,8 @@ $el: '.country-map';
 
 #{$el}{
   position: relative;
+  margin-left: $strap-gutter;
+
   #{$el}-pointer{
     background-image: image-url('map-pointer.png');
     position: absolute;

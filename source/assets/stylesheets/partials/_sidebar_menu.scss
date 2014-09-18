@@ -11,6 +11,7 @@
     padding-bottom: 1em;
     a {
       @include link($color-gray-l, $color-red);
+      line-height: 1.5;
       // активный пункт меню
       &.selected{
         color: $color-red;
