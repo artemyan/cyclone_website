@@ -1,32 +1,25 @@
 $('document').ready( function() {
-    $('ul.menu li a').each( function() {
-        $(this).mouseover( function(){
-            $(this).closest('ul.menu--main').find('a').css('color', '#f2836b');
-            $(this).css('color', '#b31a09');
-        });
-        $(this).mouseout( function(){
-            $(this).closest('ul').find('a').css('color', '#c0392b');
-        });
-    });
-
-    $(function () {
+     $(function () {
         $('ul.menu li ul').hide();
         var link = $('ul.menu li a.nested_link');
         link.click(function (e) {
             var $message = $('ul.menu li ul');
 
             if ($message.css('display') != 'block') {
-                $message.fadeIn("slow");
+                $message.fadeIn();
                 link.append('<span class="corners"></span>');
-                link.css('border-bottom-color', 'white');
-                $('span.corners').css('width', link.width + 6 +'px');
+                link.css({'border-width': '3px', 'border-style': 'solid', 'border-color': '#f2594b', 'border-bottom-color': 'white', 'color': '#B31A09', 'border-radius': '5px 5px 0 0'});
+                link.addClass('open');
+                $('span.corners').css('width', link.outerWidth() +'px');
 
                 var yourClick = true;
-                $(document).bind('click.myEvent', function (e) {
+                $(document).on('click.myEvent', function (e) {
                     if (!yourClick && $(e.target).closest('ul.menu li ul').length == 0) {
-                        $message.fadeOut("slow");
-                        link.remove('<span class="corners"></span>');
-                        link.css('border-bottom-color', '#f2594b');
+                        $message.fadeOut();
+                        $('.corners').remove();
+                        link.css({'border-color': 'transparent', 'border-radius': '5px'});
+                        link.removeClass('open');
+
                         $(document).unbind('click.myEvent');
                     }
                     yourClick = false;
@@ -34,6 +27,22 @@ $('document').ready( function() {
             }
 
             e.preventDefault();
+        });
+    });
+
+    $('ul.menu li a').each( function() {
+        $(this).mouseover( function(){
+            $(this).closest('ul.menu--main').find('a').css('color', '#f2836b');
+            $(this).css('color', '#b31a09');
+            if ($(this).hasClass('open')) {
+                $(this).siblings().mouseover( function() {
+                        $(this).siblings().css('color', '#b31a09');
+                    }
+                );
+            }
+        });
+        $(this).mouseout( function(){
+            $(this).closest('ul').find('a').css('color', '#c0392b');
         });
     });
 });

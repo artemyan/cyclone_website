@@ -23,8 +23,16 @@
       li {
         display: list-item;
         margin: 8px 0 12px;
+        padding-left: 0;
         a {
           border: none;
+          &.current {
+            border: none;
+            span {
+              color: #f2594b;
+              border-bottom: none ;
+            }
+          }
         }
       }
     }
@@ -58,12 +66,28 @@
       }
     }
     &.current {
-
+      border: 3px solid #f2594b;
+      color: #f2594b;
+      span {
+        border: none;
+      }
     }
     &.nested_link {
       background: url(../images/menu-arr-red.png) transparent 96% 45% no-repeat;
       padding-right: 25px;
       //transition: 0;
+      span {
+        &.corners {
+          position: absolute;
+          height: 3px;
+          left: -3px;
+          bottom: -3px;
+          border-left: 3px solid #f2594b;
+          border-right: 3px solid #f2594b;
+          border-bottom: none;
+        }
+
+      }
       &:hover {
         border-color: #f2594b;
         border-radius: 5px;
