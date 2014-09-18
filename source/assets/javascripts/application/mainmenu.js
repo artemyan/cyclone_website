@@ -1,4 +1,7 @@
 $('document').ready( function() {
+     if ($('li.nested_link ul a').hasClass('selected')) {
+         $('li.nested_link > a').addClass('selected');
+     }
      $(function () {
         $('ul.menu li ul').hide();
         var link = $('ul.menu li a.nested_link');
