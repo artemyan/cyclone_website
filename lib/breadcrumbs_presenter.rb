@@ -32,7 +32,7 @@ class BreadcrumbsPresenter < Middleman::Extension
         else
           link_to title, "/#{hierarchy_page.path}"
         end
-      end.join(h ' > ')
+      end[0...-1].join(h ' > ')
     end
   end
 end
