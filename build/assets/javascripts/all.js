@@ -10106,7 +10106,7 @@ $('document').ready( function() {
             var $message = $('ul.menu li ul');
 
             if ($message.css('display') != 'block') {
-                $message.fadeIn();
+                $message.fadeIn(3000);
                 link.append('<span class="corners"></span>');
                 link.css({'border-width': '3px', 'border-style': 'solid', 'border-color': '#f2594b', 'border-bottom-color': 'white', 'color': '#B31A09', 'border-radius': '5px 5px 0 0'});
                 link.addClass('open');
