@@ -1,0 +1,13 @@
+.breadcrumbs {
+  margin: 27px 0 33px 0;
+  a {
+    color: #7f8c8d;
+    text-transform: uppercase;
+    border-color: #7f8c8d;
+    font-size: 13px;
+    &:hover {
+      border: none;
+    }
+  }
+
+}
