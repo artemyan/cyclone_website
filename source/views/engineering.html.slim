@@ -16,9 +16,10 @@ section.category-page.category-page--engineering
   p.category-page__text
     | Разработка, проектирование и создание инженерных систем любой сложности структурированные кабельные сети и телефония, система охранно-тревожной сигнализации, система охранно-пожарной сигнализации и оповещение людей о пожаре, система охранного видеонаблюдения, система контроля и управления доступом, электротехнических сетей, диспетчеризации, автоматизации вентиляции и инфраструктурных систем, автоматизированных систем управления технологиями производства, систем кондиционирования и вентиляции, ситема пожаротушения, система медицинского газоснабжения, локальная вычислительная система, система подготовки воды и воздуха, радиолокация, гидролокация
 
-  .category-page__facilities
-    h2.category-page__facilities__title
-      | Реализованные проекты
-    div.category-page__facilities__list
-      - facilities_by_category(:engineering).each do |facility|
-        = partial 'facilities/facility', locals: { facility: facility }
+  - if facilities_by_category(:engineering).present?
+    .category-page__facilities
+      h2.category-page__facilities__title
+        | Реализованные проекты
+      div.category-page__facilities__list
+        - facilities_by_category(:engineering).each do |facility|
+          = partial 'facilities/facility', locals: { facility: facility }

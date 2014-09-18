@@ -30,9 +30,10 @@ section.category-page.category-page--exploitation
   p.category-page__text
     | Ключевым организационным принципом создания Системы является ее межведомственный характер. Система объединяет ведомственные информационные ресурсы и технологии в единое целое, обеспечивая их взаимосвязанное функционирование.
 
-  .category-page__facilities
-    h2.category-page__facilities__title
-      | Реализованные проекты
-    div.category-page__facilities__list
-      - facilities_by_category(:programmes).each do |facility|
-        = partial 'facilities/facility', locals: { facility: facility }
+  - if facilities_by_category(:programmes).present?
+    .category-page__facilities
+      h2.category-page__facilities__title
+        | Реализованные проекты
+      div.category-page__facilities__list
+        - facilities_by_category(:programmes).each do |facility|
+          = partial 'facilities/facility', locals: { facility: facility }

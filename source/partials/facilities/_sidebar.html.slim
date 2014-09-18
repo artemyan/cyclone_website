@@ -1,4 +1,5 @@
 ul.sidebar-menu--facilities
   - facilities_sidebar_links.each do |link|
-    li
-      = current_link_to(link.title, link.id)
+    - unless link.title.blank?
+      li
+        = current_link_to(link.title, link.id)
