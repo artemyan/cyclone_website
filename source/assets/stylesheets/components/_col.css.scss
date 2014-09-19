@@ -38,6 +38,7 @@ $el: '.col';
   // основной контент в двуколоночной верстке
   &.m-main-content {
     width: $container-width - $sidebar-width - 2*$gutter;
+    padding-bottom: 25px;
   }
 
   // колонка одной лицензии в списке лицензии
