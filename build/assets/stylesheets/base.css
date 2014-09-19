@@ -389,7 +389,7 @@ header, .header {
   width: 1096px;
   height: 130px;
   display: table;
-  min-height: 136px;
+  min-height: 130px;
   position: relative;
   margin: 30px auto; }
   /* line 10, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_banner.scss */
@@ -466,8 +466,9 @@ header, .header {
       max-width: 100px;
       height: auto;
       border: 2px solid #f0f0f0;
-      padding-bottom: 0; }
-  /* line 22, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_licenses.scss */
+      padding-bottom: 0;
+      width: 100%; }
+  /* line 23, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_licenses.scss */
   .license h4, .license h5, .license p {
     padding-left: 110px; }
 
@@ -674,12 +675,16 @@ header, .header {
   /* line 32, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
   .col.m-sidebar {
     width: 260px;
-    padding-left: 80px;
+    padding-right: 40px;
     margin-top: 93px; }
   /* line 39, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
   .col.m-main-content {
-    width: 840px; }
-  /* line 44, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
+    width: 840px;
+    padding-bottom: 25px; }
+    /* line 42, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
+    .col.m-main-content img {
+      max-width: 840px; }
+  /* line 48, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/components/_col.css.scss */
   .col.m-license {
     width: 49.9%; }
 
@@ -721,8 +726,6 @@ header, .header {
 .home-menu__bg {
   position: absolute;
   top: 0;
-  width: 2600px;
-  margin-left: -700px;
   height: 100%;
   z-index: -1;
-  background: url("/assets/images/home-bg.jpg"); }
+  background: url("/assets/images/home-bg.jpg") no-repeat top center; }
