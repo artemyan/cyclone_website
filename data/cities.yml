@@ -3,19 +3,14 @@
   x: 85
   y: 181
 
-- id: moscow
-  title: Москва
-  x: 120
-  y: 238
+- id: kirov
+  title: Кировская область
+  x:
+  y:
 
-- id: kirishi
-  title: Кириши
-  x: 120
-  y: 191
-
-- id: sestroreck
-  title: Сестрорецк
-  x: 60
-  y: 168
+- id: petropavlovsk-komchatsk
+  title: Петропавловск-Комчатск
+  x:
+  y:
 
 
