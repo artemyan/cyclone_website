@@ -1,9 +1,9 @@
 article.facility
-  = facility_image facility, class: 'vit-class facility__image'
+  = facility_preview facility, class: 'facility__image'
   - if facility.id.present?
     = link_to facility.title, facility_path(facility.id), class: "facility__title"
   - else
     h3.facility__title--no-link
-       = facility.title
+      = facility.title
   p.facility__description
     = facility.description

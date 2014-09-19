@@ -39,6 +39,9 @@ $el: '.col';
   &.m-main-content {
     width: $container-width - $sidebar-width - 2*$gutter;
     padding-bottom: 25px;
+    img{
+      max-width: $container-width - $sidebar-width - 2*$gutter;;
+    }
   }
 
   // колонка одной лицензии в списке лицензии
