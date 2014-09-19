@@ -16,10 +16,10 @@
       z-index: 100;
       background: #fff;
       border-radius: 0 5px 5px 5px ;
-      margin-top: 1px;
       padding: 0;
       transition: 2s;
       margin-top: 7px;
+      padding-top: 10px;
       li {
         display: list-item;
         margin: 8px 0 12px;
@@ -45,19 +45,9 @@
     padding: 8px 18px;
     border-radius: 5px;
     border-width: 3px;
-    transition: background 1s 0s, box-shadow 2s 2s, opacity 2s 3s, border-radius 2s 4s;
     position: relative;
     z-index: 101;
-    &:hover {
-
-      //border-radius: 5px 5px 0 0;
-      //border-bottom-color: #ffffff;
-      transition:all 0.9s 0s;
-
-      span {
-        border: none;
-      }
-    }
+    opacity: 0.7;
     &.selected {
       border: 3px solid #f2594b;
       color: #f2594b;
@@ -66,9 +56,10 @@
       }
     }
     &.nested_link {
-      background: url(../images/menu-arr-red.png) transparent 96% 45% no-repeat;
-      padding-right: 25px;
-      //transition: 0;
+      padding-right: 30px;
+      background: image-url('menu-arr-red.png') transparent 89% 45% no-repeat;
+      @include transition(all, 0.07s, ease-in-out);
+      cursor: pointer;
       span {
         &.corners {
           position: absolute;
@@ -78,16 +69,18 @@
           border-left: 3px solid #f2594b;
           border-right: 3px solid #f2594b;
           border-bottom: none;
+          background: #fff;
         }
-
+      }
+      &.open {
+        opacity: 1;
       }
       &:hover {
         border-color: #f2594b;
         border-radius: 5px;
         border-width: 3px;
         color: #c0392b;
-
-        //transition: 0;
+        @include transition(all, 0.05s, ease-in-out);
       }
     }
     span {
@@ -105,4 +98,5 @@
   // Скрываем последний пункт меню.
   // Известно, что это «контакты» и по дизайну этот пункт должен быть скрыт
   #contacts{ display: none; }
+
 }
