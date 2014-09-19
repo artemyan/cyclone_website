@@ -2,18 +2,16 @@ require 'slim'
 Slim::Engine.disable_option_validator!
 
 
+# Layout paths
 set :css_dir, 'assets/stylesheets'
-
 set :js_dir, 'assets/javascripts'
-
 set :images_dir, 'assets/images'
-
 set :fonts_dir, 'assets/fonts'
+set :partials_dir, 'partials'
+set :layouts_dir, 'layouts'
 
-set :partials_dir, "partials"
 
-set :layouts_dir, "layouts"
-
+# Custom helpers
 require 'lib/category_presenter'
 require 'lib/facility_presenter'
 require 'lib/license_presenter'
@@ -26,15 +24,22 @@ activate :city_presenter
 
 require 'lib/dir_manager.rb'
 activate :dir_manager
-activate :directory_indexes
-
 
 require 'lib/current_link_indicator.rb'
 activate :current_link_indicator
+
 require 'lib/breadcrumbs_presenter.rb'
 activate :breadcrumbs_presenter
 
-page "/404.html", layout: "empty"
+# External plugins and extensions
+activate :directory_indexes
+
+# Routing
+page '/404.html', layout: 'empty'
+page 'programmes/*', layout: 'facility'
+page 'hitech/*', layout: 'facility'
+page 'engineering/*', layout: 'facility'
+page 'exploitation/*', layout: 'facility'
 
 # Build-specific configuration
 configure :build do

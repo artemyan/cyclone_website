@@ -1,0 +1,10 @@
+/ данный шаблон используется для страниц объектов,
+/ чтобы всегда рисовался сайдбар
+
+- content_for :sidebar do
+  ==
+
+= wrap_layout :layout do
+  = partial 'shared/breadcrumbs'
+
+  == yield
