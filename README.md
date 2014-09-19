@@ -1,15 +1,22 @@
-cyclone_website
+Вебсайт для компании Циклон
 ===============
 
-Launch server
+Девелоперский сервер
 ---
 
 ```
 $ middleman server
 ```
 
-Build source
+Генерация статики
 ---
 ```
 $ middleman build
+```
+
+
+Создание версии для деплоя
+---
+```
+$ sh ./deploy.rb
 ```
