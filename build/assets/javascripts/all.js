@@ -9816,8 +9816,8 @@ if(f[a]("text")){for(g.text=f.text;h.firstChild;)h.removeChild(h.firstChild);for
           height: min_height
         });
       }
-      console.log(window_width = $(window).width());
-      console.log(margin_left = (1200 - window_width) / 2);
+      window_width = $(window).width();
+      margin_left = (1200 - window_width) / 2;
       return $main.find('.js-home-menu-bg').css({
         width: "" + window_width + "px",
         'margin-left': "" + margin_left + "px"
@@ -10208,21 +10208,23 @@ $('document').ready( function() {
 (function() {
   window.onload = function() {
     var map, placemark, s;
-    map = new YMaps.Map(document.getElementById("YMapsID"));
-    map.setCenter(new YMaps.GeoPoint(30.293048, 59.965835), 12);
-    s = new YMaps.Style();
-    s.iconStyle = new YMaps.IconStyle();
-    s.iconStyle.href = '/assets/images/map-marker.png';
-    s.iconStyle.size = new YMaps.Point(32, 40);
-    s.iconStyle.offset = new YMaps.Point(-16, -40);
-    placemark = new YMaps.Placemark(new YMaps.GeoPoint(30.293048, 59.965835), {
-      hideIcon: false,
-      style: s
-    });
-    placemark.name = "ООО «ЦИКЛОН»";
-    placemark.description = "Санкт-Петербург, Левашовский пр., 12, лит. А, Офис 615";
-    map.addOverlay(placemark);
-    return map.addControl(new YMaps.Zoom());
+    if (document.getElementById("YMapsID")) {
+      map = new YMaps.Map(document.getElementById("YMapsID"));
+      map.setCenter(new YMaps.GeoPoint(30.293048, 59.965835), 12);
+      s = new YMaps.Style();
+      s.iconStyle = new YMaps.IconStyle();
+      s.iconStyle.href = '/assets/images/map-marker.png';
+      s.iconStyle.size = new YMaps.Point(32, 40);
+      s.iconStyle.offset = new YMaps.Point(-16, -40);
+      placemark = new YMaps.Placemark(new YMaps.GeoPoint(30.293048, 59.965835), {
+        hideIcon: false,
+        style: s
+      });
+      placemark.name = "ООО «ЦИКЛОН»";
+      placemark.description = "Санкт-Петербург, Левашовский пр., 12, лит. А, Офис 615";
+      map.addOverlay(placemark);
+      return map.addControl(new YMaps.Zoom());
+    }
   };
 
 }).call(this);

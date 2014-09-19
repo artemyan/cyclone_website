@@ -15,8 +15,8 @@
           height: min_height
         });
       }
-      console.log(window_width = $(window).width());
-      console.log(margin_left = (1200 - window_width) / 2);
+      window_width = $(window).width();
+      margin_left = (1200 - window_width) / 2;
       return $main.find('.js-home-menu-bg').css({
         width: "" + window_width + "px",
         'margin-left': "" + margin_left + "px"
