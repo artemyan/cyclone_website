@@ -2854,10 +2854,10 @@ header, .header {
       z-index: 100;
       background: #fff;
       border-radius: 0 5px 5px 5px;
-      margin-top: 1px;
       padding: 0;
       transition: 2s;
-      margin-top: 7px; }
+      margin-top: 7px;
+      padding-top: 10px; }
       /* line 23, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
       .menu li ul li {
         display: list-item;
@@ -2882,27 +2882,27 @@ header, .header {
     padding: 8px 18px;
     border-radius: 5px;
     border-width: 3px;
-    transition: background 1s 0s, box-shadow 2s 2s, opacity 2s 3s, border-radius 2s 4s;
     position: relative;
-    z-index: 101; }
+    z-index: 101;
+    opacity: 0.7; }
     /* line 51, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
-    .menu li a:hover {
-      transition: all 0.9s 0s; }
-      /* line 57, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
-      .menu li a:hover span {
-        border: none; }
-    /* line 61, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
     .menu li a.selected {
       border: 3px solid #f2594b;
       color: #f2594b; }
-      /* line 64, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
+      /* line 54, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
       .menu li a.selected span {
         border: none; }
-    /* line 68, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
+    /* line 58, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
     .menu li a.nested_link {
-      background: url(../images/menu-arr-red.png) transparent 96% 45% no-repeat;
-      padding-right: 25px; }
-      /* line 73, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
+      padding-right: 30px;
+      background: url("/assets/images/menu-arr-red.png") transparent 89% 45% no-repeat;
+      -webkit-transition: all 0.07s ease-in-out;
+      -moz-transition: all 0.07s ease-in-out;
+      -ms-transition: all 0.07s ease-in-out;
+      -o-transition: all 0.07s ease-in-out;
+      transition: all 0.07s ease-in-out;
+      cursor: pointer; }
+      /* line 64, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
       .menu li a.nested_link span.corners {
         position: absolute;
         height: 3px;
@@ -2910,21 +2910,30 @@ header, .header {
         bottom: -3px;
         border-left: 3px solid #f2594b;
         border-right: 3px solid #f2594b;
-        border-bottom: none; }
-      /* line 84, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
+        border-bottom: none;
+        background: #fff; }
+      /* line 75, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
+      .menu li a.nested_link.open {
+        opacity: 1; }
+      /* line 78, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
       .menu li a.nested_link:hover {
         border-color: #f2594b;
         border-radius: 5px;
         border-width: 3px;
-        color: #c0392b; }
-    /* line 93, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
+        color: #c0392b;
+        -webkit-transition: all 0.05s ease-in-out;
+        -moz-transition: all 0.05s ease-in-out;
+        -ms-transition: all 0.05s ease-in-out;
+        -o-transition: all 0.05s ease-in-out;
+        transition: all 0.05s ease-in-out; }
+    /* line 86, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
     .menu li a span {
       border-bottom: 1px solid #e63d4d; }
-  /* line 103, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
+  /* line 96, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
   .menu .selected {
     color: #323e30;
     border-color: transparent; }
-  /* line 107, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
+  /* line 100, /Users/justvitalius/Projects/ziklon_website/source/assets/stylesheets/partials/_mainmenu.scss */
   .menu #contacts {
     display: none; }
 
