@@ -11,8 +11,9 @@ rm -rf build
 
 # for save history, pull stored public branch
 git pull origin public
+#rm -rf build
 
-# build will change all files to last state
+#build will change all files to last state
 middleman build
 
 echo 'commit and push'
@@ -31,6 +32,9 @@ git reset HEAD -- deploy.sh
 git reset HEAD -- Gemfile
 git reset HEAD -- Gemfile.lock
 git reset HEAD -- helpers
+git reset HEAD -- .rvmrc
+git reset HEAD -- README.md
+git reset HEAD -- .idea
 
 git add --ignore-removal .
 

@@ -19,6 +19,8 @@ config.rb
 Gemfile
 Gemfile.lock
 deploy.sh
+README.md
+.rvmrc
 
 # Ignore cache
 /.sass-cache
