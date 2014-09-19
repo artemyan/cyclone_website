@@ -1,79 +1,79 @@
 - id: spb
   title: Санкт-Петербург
-  x: 85
+  x: 78
   y: 181
 
 - id: kirov
   title: Кировская область
-  x:
-  y:
+  x: 145
+  y: 260
 
 - id: petropavlovsk-komchatsk
   title: Петропавловск-Комчатск
-  x:
-  y:
+  x: 666
+  y: 190
 
 
 - id: penza
   title: Пенза
-  x:
-  y:
+  x: 100
+  y: 289
 
 
 - id: moscow
   title: Москва
-  x:
-  y:
+  x: 81
+  y: 261
 
 - id: tagil
   title: Нижний Тагил
-  x:
-  y:
+  x: 200
+  y: 300
 
 
 - id: chelyabinsk
   title: Челябинск
-  x:
-  y:
+  x: 180
+  y: 309
 
 
 - id: khabarovsk
   title: Хабаровск
-  x:
-  y:
+  x: 598
+  y: 320
 
 
 - id: astrakhan
   title: Астрахань
-  x:
-  y:
+  x: 63
+  y: 345
 
 
 - id: krasnoyarsk
   title: Красноярск
-  x:
-  y:
+  x: 400
+  y: 338
 
 
 - id: kaliningrad
   title: Калининград
-  x:
-  y:
+  x: 5
+  y: 170
 
 
 - id: perm
   title: Пермь
-  x:
-  y:
+  x: 182
+  y: 265
 
 
 - id: krasnodar
   title: Краснодар
-  x:
-  y:
+  x: 17
+  y: 335
 
 
 - id: tyumen
   title: Тюмень
-  x:
-  y:
+  x: 166
+  y: 286
