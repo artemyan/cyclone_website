@@ -6,8 +6,9 @@ ul.menu.menu--main
           = link.title
         ul.menu.menu__nested
           - categories.each do |category_link|
-            li
-              = current_link_to(content_tag(:span, category_link.title), category_link.id)
+            - if category_link.title.present?
+              li
+                = current_link_to(content_tag(:span, category_link.title), category_link.id)
     - else
       li
         = current_link_to(content_tag(:span, link.title), link.id)
