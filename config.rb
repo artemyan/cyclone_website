@@ -38,6 +38,8 @@ activate :directory_indexes
 page '/404.html', layout: 'empty'
 page 'programmes/*', layout: 'facility'
 page 'hitech/*', layout: 'facility'
+page 'hitech_social/*', layout: 'facility'
+page 'hitech_industrial/*', layout: 'facility'
 page 'engineering/*', layout: 'facility'
 page 'exploitation/*', layout: 'facility'
 
