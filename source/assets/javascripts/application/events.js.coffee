@@ -13,8 +13,8 @@ $ ->
     $main.css(height: possible_height) if possible_height > min_height
     $main.css(height: min_height) if possible_height <= min_height
 
-    console.log window_width = $(window).width()
-    console.log margin_left = (1200 - window_width)/2
+    window_width = $(window).width()
+    margin_left = (1200 - window_width)/2
 
     $main.find('.js-home-menu-bg').css
       width: "#{window_width}px"
